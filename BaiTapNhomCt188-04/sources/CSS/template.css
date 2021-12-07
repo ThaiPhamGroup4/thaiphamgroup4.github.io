@@ -22,11 +22,10 @@
 /* HEADER */
 .header {
     background-color: rgb(149, 252, 149);
-    padding: 12px 0;
+    padding: 10px 0 4px 0;
     box-shadow: 0 3px 4px -3px rgb(63, 63, 63);
-   
 }
-.header .header__sub-header {
+.header__sub-header {
     display: flex;
     justify-content: space-between;
     font-family: var(--font-primary);
@@ -34,6 +33,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 1200px; 
+    margin-bottom: 10px;
 }
 .clock {
     display: inline-block;
@@ -47,14 +47,13 @@
 .header__main-header {
     display: flex;
     height: 40px;
-    margin-top: 10px;
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
 .header__main-header .logo {
-    line-height: 50px;
+    line-height: 40px;
     font-size: 36px;
     text-decoration: none;
     /* font-family: 'Courier New', Courier, monospace; */
@@ -90,13 +89,13 @@ input[name='search__input'] {
     margin-left: 50px;
     margin-right: 100px;
     height: 100%;
-    margin-top: 10px;
     outline: none;
+    line-height: 40px;
 }
 /* gọi ý tìm kiếm */
 .main-header__suggest {
     position: absolute;
-    top: 36px;
+    top: 38px;
     left: 0;
     z-index: 10;
     width: 100%;
@@ -114,8 +113,8 @@ input[name='search__input'] {
 .main-header__suggest dl dd {
     display: block;
     padding-left: 30px !important;
-    padding: 4px;
     font-size: 14px;
+    line-height: 30px;
 } 
 .main-header__suggest dl dd:hover {
     background-color: rgba(85, 74, 74, 0.377);
@@ -131,7 +130,7 @@ input[name='search__input']:focus ~ .main-header__suggest{
 }
 .main__header-member a {
     text-decoration: none;
-    line-height: 50px;
+    line-height: 40px;
     color: #000;
 }
  

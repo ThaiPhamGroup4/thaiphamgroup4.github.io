@@ -1,6 +1,5 @@
 // Nút ToTop
 let toTopBtn = document.querySelector('.toTop')
-console.log(toTopBtn)
 window.onscroll = () => {
     if(this.scrollY < 200) {
         toTopBtn.style.opacity = 0;
@@ -12,6 +11,7 @@ toTopBtn.addEventListener('click', () => {
     // document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0
 })
+
 
 // Đồng hồ 
 function clock() {
