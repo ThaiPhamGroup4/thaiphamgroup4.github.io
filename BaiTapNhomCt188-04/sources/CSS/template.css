@@ -35,7 +35,9 @@
     margin: 0 auto;
     max-width: 1200px; 
 }
-
+.clock {
+    display: inline-block;
+}
 .header__sub-header a {
     display: inline-block;
     text-decoration: none;
@@ -51,8 +53,31 @@
     max-width: 1200px;
 }
 
-.main__header-logo {
-    height: 50px;
+.header__main-header .logo {
+    line-height: 50px;
+    font-size: 36px;
+    text-decoration: none;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation: changeColor ease 8s infinite;
+}
+/* Hiệu ứng đổi màu chữ */
+@keyframes changeColor {
+    20% {
+        color: rgb(33, 41, 38);
+    }
+    40% {
+        color: rgb(74, 33, 112);
+    }
+    60% {
+        color: darkgoldenrod;
+    }
+    80% {
+        color: rgb(190, 37, 132);
+    }
+    100% {
+        color: darkgreen;
+    }
 }
 
 input[name='search__input'] {
@@ -62,7 +87,7 @@ input[name='search__input'] {
 .main__header-search {
     position: relative;
     flex-basis: 50%;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 100px;
     height: 100%;
     margin-top: 10px;

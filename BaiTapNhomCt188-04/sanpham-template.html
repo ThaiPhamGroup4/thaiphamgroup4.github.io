@@ -19,6 +19,7 @@
 <body id="container">
 <!-- Header -->
    <header class="header">
+       <!-- header_phụ -->
         <section class="header__sub-header">
             <div class="sub-header__left">
                 <a href="#!">Tải ứng dụng về máy</a>
@@ -26,6 +27,9 @@
                 <a href="#!">Kết nối:</i></a> 
                 <a href="#!"> <i class="fab fa-facebook-square"></i></a>
                 <a href="#!"> <i class="fab fa-instagram"></i></i></a>
+                <span>| Time:</span>
+                <!-- Thẻ p chứ Đồng hồ Realtime -->
+                <p class="clock"></p> 
             </div>
             <div class="sub-header__right">
                 <a href="#!">Chăm sóc khách hàng</a>
@@ -37,8 +41,24 @@
         </section>
         <section class="header__main-header">
             <!-- header chính -->
-            <a href=""><img src="./sources/images/ph-ki-n-cong-ngh-logo.png" alt="Logo" class="main__header-logo"></a>
-            <input type="search" placeholder="Tìm kiếm sản phẩm" class="main__header-search">
+            <a href="" class="logo">
+                BOOKSTORE
+            </a>
+            <div class="main__header-search">
+                <input name="search__input" type="search" placeholder="Tìm kiếm sản phẩm">
+                <div class="main-header__suggest">
+                    <dl>
+                        <dt>Lịch sử:</dt>
+                        <dd>Từ điển</dd>
+                        <dd>sách học tiếng anh</dd>
+                        <hr />
+                        <dt>Gợi ý</dt>
+                        <dd>Doraemon</dd>
+                        <dd>Học 2000 từ vựng tiếng Anh</dd>
+                        <dd>Tiểu thuyết Your name</dd>
+                      </dl>
+                </div>
+            </div>
             <div class="main__header-member">
                 <i class="fas fa-user"></i> 
                 <a href="">Đăng nhập</a> 
@@ -48,8 +68,12 @@
                 <a href="">Đăng ký</a>
 
                 <span>|</span>
-                <i class="fas fa-cart-plus"></i>
-                <a href="">Giỏ hàng</a>
+                <a href="" class="cart">
+                    <i class="fas fa-cart-plus">
+                        <span class="cart-number">0</span>
+                    </i> 
+                    Giỏ hàng
+                </a>
             </div>
         </section>
    </header>

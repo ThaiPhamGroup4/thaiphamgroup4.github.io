@@ -16,7 +16,8 @@
 .content__product-List {
     /* width: 1200px; */
     display: flex;
-    gap: 8px
+    gap: 8px;
+    margin-bottom: 40px;
 }
 
 /* Loại bỏ scrollbar */
@@ -40,7 +41,7 @@
     border-radius: 2px;
 }
 .content__title {
-    margin-bottom: 2px;
+    margin-bottom: 10px;
     border-bottom: 1px solid #cccaca;
 }
 .info__title {
@@ -67,9 +68,39 @@
 
 /* Danh mục sản phẩm */
 .content__category {
-    border: 1px solid;
-    
+   
 }
+.category__list-category {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.list-category__item {
+    border: 1px solid #000;
+    flex-basis: calc(100%/6);
+    padding: 8px 0px 8px 10px;
+    color: #000;
+}
+.list-category__item:hover {
+    background-image: linear-gradient( 135deg, #79F1A4 10%, #2267b1 100%);
+}
+.list-category__item i{
+    font-size: 20px;
+} 
+
+.list-category__item p{
+    font-size: 16px;
+    font-family: var(--font-primary);
+    margin-left: 10px;
+}
+
+:is(.list-category__item) :is(i, p) { /*.list-category__item i and .list-category__item p*/
+    float: left;
+    line-height: 21px;
+}
+/* css img thu vien swiper js */
 .mySwiper .swiper-slide img{
     width: 100%;
 }

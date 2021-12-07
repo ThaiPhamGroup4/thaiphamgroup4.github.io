@@ -23,6 +23,9 @@
                 <a href="#!">Kết nối:</i></a> 
                 <a href="#!"> <i class="fab fa-facebook-square"></i></a>
                 <a href="#!"> <i class="fab fa-instagram"></i></i></a>
+                <span>| Time:</span>
+                <!-- Thẻ p chứ Đồng hồ Realtime -->
+                <p class="clock"></p> 
             </div>
             <div class="sub-header__right">
                 <a href="#!">Chăm sóc khách hàng</a>
@@ -34,8 +37,24 @@
         </section>
         <section class="header__main-header">
             <!-- header chính -->
-            <a href=""><img src="./sources/images/ph-ki-n-cong-ngh-logo.png" alt="Logo" class="main__header-logo"></a>
-            <input type="search" placeholder="Tìm kiếm sản phẩm" class="main__header-search">
+            <a href="" class="logo">
+                BOOKSTORE
+            </a>
+            <div class="main__header-search">
+                <input name="search__input" type="search" placeholder="Tìm kiếm sản phẩm">
+                <div class="main-header__suggest">
+                    <dl>
+                        <dt>Lịch sử:</dt>
+                        <dd>Từ điển</dd>
+                        <dd>sách học tiếng anh</dd>
+                        <hr />
+                        <dt>Gợi ý</dt>
+                        <dd>Doraemon</dd>
+                        <dd>Học 2000 từ vựng tiếng Anh</dd>
+                        <dd>Tiểu thuyết Your name</dd>
+                      </dl>
+                </div>
+            </div>
             <div class="main__header-member">
                 <i class="fas fa-user"></i> 
                 <a href="">Đăng nhập</a> 
@@ -45,14 +64,20 @@
                 <a href="">Đăng ký</a>
 
                 <span>|</span>
-                <i class="fas fa-cart-plus"></i>
-                <a href="">Giỏ hàng</a>
+                <a href="" class="cart">
+                    <i class="fas fa-cart-plus">
+                        <span class="cart-number">0</span>
+                    </i> 
+                    Giỏ hàng
+                </a>
             </div>
         </section>
    </header>
 <!-- END -->
+
 <!-- MAIN -->
    <main class="content">
+       <!-- Slider -->
         <article class="swiper mySwiper">
             <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="https://salt.tikicdn.com/cache/w1080/ts/banner/9f/01/46/4543f0a3b942eac9d845dd8c3d5c715e.png.webp" alt=""></div>
@@ -61,13 +86,60 @@
             
         </article>
 
-        <h1 class="content__title">Danh mục:</h1>
+        <h1 class="content__title">Danh Mục Nổi Bật</h1>
         <article class="content__category">
-            <ul class="category__item">
-
-            </ul>
+            <div class="category__list-category">
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Tiểu Thuyết</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Học Lập Trình</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Sách Nấu Ăn</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Giáo Trình</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Truyện Tranh</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Truyện Trinh Thám</p>
+                </a>
+            </div>
+            <div class="category__list-category">
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Sách Kỹ Năng Sống</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Bí Quyểt Làm Giàu</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Sách Tham Khảo</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Truyện Cười</p>
+                </a>
+                <a href="#!" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Khoa Học</p>
+                </a>
+                
+            </div>
         </article>
 
+<!-- Hightlights Products -->
         <h1 class="content__title">Tác phẩm nổi bật</h1>
         <article class="content__product-List"> 
             <section class="product-list__item">
@@ -75,7 +147,7 @@
                 <div class="item__info">
                     <p class="info__title">The house about the sea</p>
                     <p class="info__arthor">J.Nicole</p>
-                    <a href="#!" class="info__price">120.000</a>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 120.000</a>
                 </div>
             </section>
             <section class="product-list__item">
@@ -83,7 +155,7 @@
                 <div class="item__info">
                     <p class="info__title">Kimi no na wa</p>
                     <p class="info__arthor">Makoto Shinkai</p>
-                    <a href="#!" class="info__price">120.000</a>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ">Mua: 120.000</a>
                 </div>
             </section>
             <section class="product-list__item">
@@ -91,7 +163,7 @@
                 <div class="item__info">
                     <p class="info__title">Your lie in april</p>
                     <p class="info__arthor">Arakawa Naoshi</p>
-                    <a href="#!" class="info__price">80.000</a>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 80.000</a>
                 </div>
             </section>
             <section class="product-list__item">
@@ -99,7 +171,7 @@
                 <div class="item__info">
                     <p class="info__title">24H in Paris</p>
                     <p class="info__arthor"> Romi Moondi</p>
-                    <a href="#!" class="info__price">70.000</a>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 70.000</a>
                 </div>
             </section>
             <section class="product-list__item">
@@ -107,7 +179,7 @@
                 <div class="item__info">
                     <p class="info__title">Vĩnh Biệt, Doraemon</p>
                     <p class="info__arthor">Fujiko Fujio</p>
-                    <a href="#!" class="info__price">61.000</a>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 61.000</a>
                 </div>
             </section>
             <section class="product-list__item">
@@ -115,7 +187,7 @@
                 <div class="item__info">
                     <p class="info__title">Tự học 2000 từ vựng tiếng Anh</p>
                     <p class="info__arthor">Nhà Xuất Bản DHQG Hà Nội</p>
-                    <a href="#!" class="info__price">54.000</a>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 54.000</a>
                 </div>
             </section>
             <section class="product-list__item">
@@ -123,69 +195,69 @@
                 <div class="item__info">
                     <p class="info__title">Lập Trình Viên Đâu Phải Chỉ Biết Code</p>
                     <p class="info__arthor">Toidicodedao</p>
-                    <a href="#!" class="info__price">126.700</a>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 126.700</a>
                 </div>
             </section>
         </article>
 
-            <!-- Sale -->
-
+<!-- New update Products -->
         <h1 class="content__title">Mới cập nhật</h1>
         <article class="content__product-List">
             <section class="product-list__item">
-                <img src="" alt="">
+                <img src="./sources/images/yourNamejpg.jpg" alt="">
                 <div class="item__info">
-                    <p class="info__title"></p>
-                    <p class="info__arthor"></p>
-                    <a href="#!" class="info__price"></a>
+                    <p class="info__title">Kimi no na wa</p>
+                    <p class="info__arthor">Makoto Shinkai</p>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 120.000</a>
                 </div>
             </section>
             <section class="product-list__item">
-                <img src="" alt="">
+                <img src="./sources/images/thang4lie.jpg" alt="Your lie in april">
                 <div class="item__info">
-                    <p class="info__title"></p>
-                    <p class="info__arthor"></p>
-                    <a href="#!" class="info__price"></a>
+                    <p class="info__title">Your lie in april</p>
+                    <p class="info__arthor">Arakawa Naoshi</p>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 80.000</a>
                 </div>
             </section>
             <section class="product-list__item">
-                <img src="" alt="">
+                <img src="./sources/images/24hParis.jpg" alt="24H in Paris">
                 <div class="item__info">
-                    <p class="info__title"></p>
-                    <p class="info__arthor"></p>
-                    <a href="#!" class="info__price"></a>
+                    <p class="info__title">24H in Paris</p>
+                    <p class="info__arthor"> Romi Moondi</p>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 70.000</a>
                 </div>
             </section>
             <section class="product-list__item">
-                <img src="" alt="">
+                <img src="./sources/images/220294463-416-k543891.jpg" alt="">
                 <div class="item__info">
-                    <p class="info__title"></p>
-                    <p class="info__arthor"></p>
-                    <a href="#!" class="info__price"></a>
+                    <p class="info__title">The house about the sea</p>
+                    <p class="info__arthor">J.Nicole</p>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 120.000</a>
                 </div>
             </section>
             <section class="product-list__item">
-                <img src="" alt="">
+                <img src="./sources/images/bye-doraemon.jpg" alt="bye-doraemon">
                 <div class="item__info">
-                    <p class="info__title"></p>
-                    <p class="info__arthor"></p>
-                    <a href="#!" class="info__price"></a>
+                    <p class="info__title">Vĩnh Biệt, Doraemon</p>
+                    <p class="info__arthor">Fujiko Fujio</p>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 61.000</a>
                 </div>
             </section>
             <section class="product-list__item">
-                <img src="" alt="">
+                <img src="./sources/images/english.jpg" alt="">
                 <div class="item__info">
-                    <p class="info__title"></p>
-                    <p class="info__arthor"></p>
-                    <a href="#!" class="info__price"></a>
+                    <p class="info__title">Tự học 2000 từ vựng tiếng Anh</p>
+                    <p class="info__arthor">Nhà Xuất Bản DHQG Hà Nội</p>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 54.000</a>
                 </div>
             </section>
+            
             <section class="product-list__item">
-                <img src="" alt="">
+                <img src="./sources/images/CodeDaokysu.jpg" alt="Code dạo">
                 <div class="item__info">
-                    <p class="info__title"></p>
-                    <p class="info__arthor"></p>
-                    <a href="#!" class="info__price"></a>
+                    <p class="info__title">Lập Trình Viên Đâu Phải Chỉ Biết Code</p>
+                    <p class="info__arthor">Toidicodedao</p>
+                    <a href="#!" class="info__price" title="Thêm vào giỏ hàng">Mua: 126.700</a>
                 </div>
             </section>
         </article>
@@ -244,14 +316,12 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
          const swiper = new Swiper('.swiper', {
-            spaceBetween: 30,
+            // spaceBetween: 30,
             speed: 600,
-            // centeredSlides: true,
             autoplay: {
                 delay: 4500,
                 disableOnInteraction: false,
             },
-           
         });
     </script>
 </html>
