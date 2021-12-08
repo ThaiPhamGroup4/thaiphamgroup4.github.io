@@ -51,6 +51,7 @@
 }
 .info__title {
     font-size: 18px;
+    display: block;
 }
 .info__arthor {
     font-size: 14px;
@@ -58,7 +59,7 @@
 .item__info {
     padding: 4px 4px 30px;
 }
-.info__price {
+.info__price-button {
     background-color: rgb(75, 71, 71);
     color: aquamarine;
     padding: 4px 6px;
@@ -71,7 +72,7 @@
     right: 6px;
     transition: all .1s linear;
 }
-.info__price:hover {
+.info__price-button:hover {
     transform: scale(1.05);
     box-shadow: 2px 2px 10px -1px #000;
 }
