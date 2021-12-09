@@ -32,7 +32,13 @@ function clock() {
 }
 clock()
 
-// ////////////////////chức năng thêm vào giỏ hàng //////////////////////
+// ////////////////////chức năng thêm vào giỏ hàng dùng chung cho trang chủ, và trang chi tiết sản phẩm//////////////////////
+// arrCart là mảng chứa các sản phẩm trong localStorage
+let arrCart = JSON.parse(localStorage.getItem('Cart'));
+// Khi tải trang sẽ hiển thị lại số tượng sản phẩm trong giỏ
+window.onload = function () {
+    showQuantily(arrCart)
+}
 // Kiểm tra có hổ trợ LocalStorage hay không
 if (typeof (Storage) !== 'undefined') {
     // Khởi tạo cart trong localStorage
@@ -45,17 +51,16 @@ if (typeof (Storage) !== 'undefined') {
             let nameProduct = e.target.parentNode.children[0].innerText
             let priceProduct = e.target.parentNode.children[2].innerText
             let imgSrc = e.target.parentNode.previousElementSibling.attributes[0].nodeValue;
-
             // Đưa dữ liệu lấy được vào object
-            let infoProduct = {
+            let newProducts = {
                 id: idProduct,
                 name: nameProduct,
                 price: priceProduct,
                 src: imgSrc,
-                quantity: 1,
+                quantily: 1,
             }
-            // đưa infoProduct vào LocalStorge
-            addInStorage(infoProduct)
+            // đưa newProducts vào LocalStorge
+            addInStorage(newProducts)
         })
     })
 
@@ -70,36 +75,38 @@ if (typeof (Storage) !== 'undefined') {
 function setInStorage() {
     let cart = new Array;
     if (localStorage.key('Cart') == 'Cart') {
-        // Đã có key trong Storagé
+        // Đã có key trong Storage
     }
     else {
+
         localStorage.setItem('Cart', JSON.stringify(cart))
     }
 }
 
-// Duyeetj thu localstore
-
-function addInStorage(infoProduct) {
+function addInStorage(newProducts) {
     // Danh sách các sản phẩm trong giỏ
-    let arrCart = JSON.parse(localStorage.getItem('Cart'));
     // id gán bằng id của sản phẩm sắp đc thêm
-    let id = infoProduct.id;
+    let id = newProducts.id;
     // Kiểm tra nếu mảng arrCart này rổng thì thêm vô luôn, ngược lại thì xét 2 trường hợp
     if (arrCart.length === 0) {
-        arrCart.push(infoProduct)
-    } 
+        console.log("cacs")
+        arrCart.push(newProducts)
+    }
     else {
         let isExis = isInLocalStorage(id, arrCart)
-        // trường hợp 1 nếu isExis bằng -10 thì tương đương k tồn tại trùng => thêm vào mảng luôn
+        // trường hợp 1 nếu isExis bằng -10 thì tương đương k tồn tại sp trùng => thêm vào mảng luôn
         if (isExis === -10) {
-            arrCart.push(infoProduct)
+            arrCart.push(newProducts)
         }
-        // trường hợp 2 isExis khắc -10 => tồn tại trong giỏ rồi => cho thuộc tính quatity(số lượng) tăng lên 1
-        else arrCart[isExis].quantity++
+        // trường hợp 2 isExis khắc -10 => tồn tại sp trong giỏ rồi => cho thuộc tính quatity(số lượng) của sp đó tăng lên 1
+        else arrCart[isExis].quantily++
     }
     // Đưa arrCart đã xử lý vào LocalStorage
     localStorage.setItem('Cart', JSON.stringify(arrCart))
+    // Thông báo thêm thành công
     addProductSuccess()
+    // Hiển thị lại số sản phẩm trong giỏ hàng ngay khi thêm thành công mà k reload lại trang
+    showQuantily(arrCart)
 }
 // hàm kiểm tra có tồn tại sản phẩm này trong Storage chưa
 //  indexNew === -10 là không tồn tại trong arrCart và nếu !== -10 thì có tồn tại
@@ -115,3 +122,14 @@ function isInLocalStorage(id, arrCart) {
 function addProductSuccess() {
     // alert("ok")
 }
+// Hiển thị số sp trong giỏ
+function showQuantily() {
+    let quantily = 0
+    let cartNumber = document.querySelector('.cart-number')
+    // Duyệt qua mảng arrCart lấy từng trường quantily của 1 sản phẩm cộng vào biến quantily
+    arrCart.map((item) => {
+        quantily += item.quantily;
+    })
+    cartNumber.innerText = quantily;
+}
+

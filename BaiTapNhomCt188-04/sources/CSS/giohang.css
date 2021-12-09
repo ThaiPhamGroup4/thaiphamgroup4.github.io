@@ -1,0 +1,48 @@
+/* File css của trang giỏ hàng */
+/* By Phạm Quang Thái B2012257 */
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    gap: 1%;
+}
+
+.content__product {
+    width: 100%;
+    height: 80vh;
+    overflow: auto;
+    border: 1px solid yellow;
+}
+
+.content__into-money {
+    width: 100%;
+    border: 1px solid yellow;
+}
+
+.product__table {
+    width: 100%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+.product__table th {
+    font-size: 14px;
+}
+.product__table td, .product__table th{
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px; 
+}
+
+.table__product-img {
+    height: 100px;
+    
+}
+.product__table tr td {
+    text-align: center;
+}
+.product__table input[name="inputQuantily"] {
+    width: 40px;
+}
