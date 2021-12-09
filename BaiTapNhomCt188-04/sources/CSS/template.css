@@ -24,6 +24,8 @@ a {
 
 /* HEADER */
 .header {
+    position: relative;
+    z-index: 100;
     background-color: rgb(149, 252, 149);
     padding: 10px 0 4px 0;
     box-shadow: 0 3px 4px -3px rgb(63, 63, 63);

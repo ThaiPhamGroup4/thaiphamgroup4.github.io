@@ -120,7 +120,7 @@ function isInLocalStorage(id, arrCart) {
 
 // Hiện 1 thông báo khi thêm thành công
 function addProductSuccess() {
-    // alert("ok")
+    alert("Thông báo thêm sản phẩm thành công!")
 }
 // Hiển thị số sp trong giỏ
 function showQuantily() {

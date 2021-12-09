@@ -44,5 +44,9 @@
     text-align: center;
 }
 .product__table input[name="inputQuantily"] {
-    width: 40px;
+    width: 42px;
+    padding: 2px 0;
+}
+.confirm {
+    padding: 4px 0;
 }
