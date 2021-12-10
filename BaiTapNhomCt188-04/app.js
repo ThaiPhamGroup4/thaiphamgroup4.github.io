@@ -33,6 +33,7 @@ function clock() {
 clock()
 
 // ////////////////////chức năng thêm vào giỏ hàng dùng chung cho trang chủ, và trang chi tiết sản phẩm//////////////////////
+
 // arrCart là mảng chứa các sản phẩm trong localStorage
 let arrCart = JSON.parse(localStorage.getItem('Cart'));
 // Khi tải trang sẽ hiển thị lại số tượng sản phẩm trong giỏ
@@ -47,10 +48,15 @@ if (typeof (Storage) !== 'undefined') {
     let buyBtns = document.querySelectorAll('.info__price-button')
     buyBtns.forEach((buyBtn) => {
         buyBtn.addEventListener('click', (e) => {
-            let idProduct = e.target.parentNode.children[3].innerText
-            let nameProduct = e.target.parentNode.children[0].innerText
-            let priceProduct = e.target.parentNode.children[2].innerText
-            let imgSrc = e.target.parentNode.previousElementSibling.attributes[0].nodeValue;
+            // let idProduct = e.target.parentNode.children[3].innerText
+            let idProduct = e.target.parentNode.querySelector('.id').innerText
+            // let nameProduct = e.target.parentNode.children[0].innerText
+            let nameProduct = e.target.parentNode.querySelector('.info__title').innerText
+            // let priceProduct = e.target.parentNode.children[2].innerText
+            let priceProduct = e.target.parentNode.querySelector('.price').innerText
+            // let imgSrc = e.target.parentNode.previousElementSibling.attributes[0].nodeValue;
+            let imgSrc = e.target.parentNode.parentNode.querySelector('.item__image').attributes[0].nodeValue
+
             // Đưa dữ liệu lấy được vào object
             let newProducts = {
                 id: idProduct,
@@ -84,7 +90,6 @@ function setInStorage() {
 }
 
 function addInStorage(newProducts) {
-    // Danh sách các sản phẩm trong giỏ
     // id gán bằng id của sản phẩm sắp đc thêm
     let id = newProducts.id;
     // Kiểm tra nếu mảng arrCart này rổng thì thêm vô luôn, ngược lại thì xét 2 trường hợp

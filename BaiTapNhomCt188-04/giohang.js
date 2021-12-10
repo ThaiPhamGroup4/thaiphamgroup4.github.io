@@ -20,7 +20,7 @@ function renderProduct() {
 
         table.innerHTML += `
             <tr>
-                <td colspan="6"><p>Bạn chưa thêm sản phẩm nào giỏ, mua sắm ngay tại <a style="color: blue;" href="./sanpham.html">Đây</a></p></td>
+                <td colspan="6"><p>Bạn chưa có sản phẩm nào trong giỏ, mua sắm ngay tại <a style="color: blue;" href="./sanpham.html">Đây</a></p></td>
             </tr>
         `
     }

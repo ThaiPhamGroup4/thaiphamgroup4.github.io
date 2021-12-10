@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Css chung -->
+    <!-- Css template  -->
     <link rel="stylesheet" href="./sources/CSS/template.css">
     <!-- Css riêng -->
-    <link rel="stylesheet" href="./sources/CSS/giohang.css">
-    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./sources/CSS/chitiet.css">
+    <title>Chi Tiết Sản Phẩm</title>
 </head>
-
+<!-- FILE NÀY LÀ TEAMPLATE, KHÔNG ĐƯỢC LÀM VÀO TRANG NÀY :) -->
 <body id="container">
     <header class="header">
         <!-- header-Phụ -->
@@ -68,7 +68,7 @@
                 <a href="">Đăng ký</a>
 
                 <span>|</span>
-                <a href="" class="cart">
+                <a href="./giohang.html" class="cart">
                     <i class="fas fa-cart-plus">
                         <span class="cart-number"></span>
                     </i> 
@@ -79,24 +79,42 @@
         </section>
     </header>
 
-    <main class="content">
-        <article class="content__product">
-            <table class="product__table">
-                <tr class="table__head">
-                    <th>Ảnh sản phẩm</th>
-                    <th>Tên sản phẩm</th>
-                    <th>Số lượng</th>
-                    <th>Giá(trên 1 sản phẩm)</th>
-                    <th><button class="confirm">Xác nhận chỉnh sửa</button></th>
-                    <th>Xoá</th>
-                </tr>
-                
-            </table>
-        </article>
-        <article class="content__into-money">
+    <!-- Đây là nội dung chính -->
+    <main class="detail">
+        <!-- Cấu trúc chung ĐỂ DÙNG ĐƯỢC FILE app.js -->
+        <!-- Vui lòng giữ nguyên những Class có sẳn trong này -->
+        <section class="detail__item">
+            <!-- Ảnh sách -->
+            <div class="item__img-wraper">
+                <img src="./sources/images/220294463-416-k543891.jpg" class="item__image"  alt="img" >
+            </div>
+            
+            <!-- Thông tin  -->
+            <div class="item__info">
+                <h1 href="" class="info__title">The house above the sea</h1>
+                <p class="info__arthor">Tác giả: J.Nicole</p>
+                <p class="price-show">Giá: 120.000&#8363;</p>
+                <p class="price" hidden>120000</p>
+                <p class="id" hidden>001</p>
+                <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Thêm Vào Giỏ</a>
+            </div>
+        </section>
 
-        </article>
+        <section class="detail__description">
+           <div class="description">
+                <h1>Mô tả chi tiết</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quibusdam dolorum nostrum voluptatum repellat delectus suscipit consequuntur earum corporis? Suscipit modi quaerat mollitia voluptas ducimus quo ut cupiditate nisi eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta doloribus obcaecati provident veniam natus, quam sunt iste id, dolore maiores, voluptate sint sed? Atque ullam consequuntur laboriosam sed dolor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat explicabo, aliquid, ipsam reprehenderit totam corporis rem ad, perferendis officia aut repellendus rerum blanditiis quaerat saepe ipsa excepturi deleniti illum expedita?</p>
+           </div>
+        </section>
+        <section class="detail__comment">
+            <!-- Này là bình luận -->
+            <!-- phần này để sau này e làm -->
+            <div class="comment">
+                <h1>Bình luận</h1>
+            </div>
+         </section>
     </main>
+
     <footer class="footer">
         <article>
             <div class="footer__cskh">
@@ -143,5 +161,4 @@
     </footer>
 </body>
 <script src="./app.js"></script>
-<script src="./giohang.js"></script>
 </html>
