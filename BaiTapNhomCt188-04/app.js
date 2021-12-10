@@ -22,9 +22,9 @@ function clock() {
     let s = time.getSeconds();
     // validate time
     if (s < 10) {
-        s = '0' + s
+        s = '0' + s;
     }
-    else if (m < 10) {
+    if (m < 10) {
         m = '0' + m;
     }
     timeHtml.innerText = `${h}:${m}:${s}`;
