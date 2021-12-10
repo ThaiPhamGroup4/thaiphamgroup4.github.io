@@ -1,0 +1,68 @@
+/* File css của trang template chitiet.html */
+/* Ko CSS THÊM VÀO FILE NÀY */
+.detail {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.detail__item {
+    max-width: 900px;
+    box-shadow: 0 6px 10px -6px rgb(0, 0, 0);
+    margin: 0 auto 20px;
+    display: grid;
+    grid-template-columns: 34% 66%;
+    /* border: 1px solid; */
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+.item__img-wraper {
+
+}
+
+.item__image {
+    display: block;
+    height: 440px;
+    margin: 0 auto;
+}
+
+.item__info {
+    /* border: 1px solid; */
+    border-left: 1px solid rgb(179, 185, 190);
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.info__title {
+    font-weight: 100;
+    font-size: 32px;
+}
+
+.price-show {
+    margin-bottom: 10px;
+}
+
+.info__arthor {
+
+}
+
+.info__price-button {
+    display: inline-block;
+    background-color: tomato;
+    padding: 10px 80px;
+}
+
+.detail__description {
+    margin-top: 20px;
+}
+.description {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.detail__comment {
+    margin-top: 20px;
+}
+
+.comment {
+    max-width: 900px;
+    margin: 0 auto;
+}
