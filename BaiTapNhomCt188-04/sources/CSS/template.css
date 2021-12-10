@@ -46,7 +46,6 @@ a {
 .header__sub-header a {
     display: inline-block;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.808);
 }
 
 .header__main-header {
@@ -55,6 +54,9 @@ a {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
+}
+.main__header-member a{
+    font-size: 17px;
 }
 
 .header__main-header .logo {
@@ -76,6 +78,7 @@ a {
     60% {
         color: darkgoldenrod;
     }
+    
     80% {
         color: rgb(190, 37, 132);
     }
