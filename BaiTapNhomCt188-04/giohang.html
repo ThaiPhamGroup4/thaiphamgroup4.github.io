@@ -90,11 +90,82 @@
                     <th><button class="confirm">Xác nhận chỉnh sửa</button></th>
                     <th>Xoá</th>
                 </tr>
-                
             </table>
         </article>
+        <!-- Phần thanh toán -->
         <article class="content__into-money">
+            <form action="noUrl">
+                <section class="into-money">
+                    <h1 class="into-money__title">Thanh Toán</h1>
+                    <!-- Tổng tiền -->
+                    <div class="into-money__total">
+                        <h4>Thành tiền</h4>
+                        <div class="total__wrapper">
+                            <table>
+                                <tr>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá (Tổng)</th>
+                                </tr>
+                                <!-- <tr>
+                                    <td>The house above the sea</td>
+                                    <td>1</td>
+                                    <td>100000</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Tổng</th>
+                                    <td>100000</td>
+                                </tr> -->
+                                </table>
+                        </div>
+                    </div>
+                    <!-- Thông tin liên hệ giao hàng -->
+                    <div class="into-money__contact">
+                        <h4>Thông tin liên hệ</h4>
+                        <div class="contact__wrapper">
+                            <table>
+                                <tr>
+                                    <td>Họ Tên</td>
+                                    <td><input class="contact__name" type="text" required></td>
+                                </tr>
+                                <tr>
+                                    <td>Số Điện Thoại</td>
+                                    <td><input class="contact__phone" type="text" required></td>
+                                </tr>
+                                <tr class="contact__pay-type">
+                                    <td colspan="2">Phương Thức Thanh Toán</td>
+                                    <!-- <td><input type="text"></td> -->
+                                </tr>
+                                <tr class="contact__pay-type">
+                                    <form action="#!">
+                                        <td>
+                                            <label for="in1">
+                                                    <input  id="in1" name="thanhtoan" type="radio" > Chuyển khoản
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <label for="in2">
+                                                <input id="in2"  name="thanhtoan" type="radio" > Thanh toán khi nhận hàng
+                                            </label>
+                                        </td>
+                                    </form>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="contact__location">Địa Chỉ Nhận Hàng</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input class="contact__location" required type="text"></td>
+                                </tr>
+                            </table>
 
+                            <div class="contact__submit-form">
+                                <input type="submit" value="Thanh Toán">
+                                <a>Huỷ</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </form>
         </article>
     </main>
     <footer class="footer">
