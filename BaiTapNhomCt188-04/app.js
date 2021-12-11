@@ -1,3 +1,6 @@
+/* By Phạm Quang Thái B2012257 */
+// Js dùng cho trang chủ và trang chi tiết sp
+
 // Nút ToTop
 let toTopBtn = document.querySelector('.toTop')
 window.onscroll = () => {

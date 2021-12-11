@@ -6,6 +6,7 @@
 nếu k sẽ bị lỗi
 Do số lượng sản phẩm trong giỏ của 2 trang 'trangchu.html' và 'sanpham.html' chưa được cập nhật lại
 */
+/* By Phạm Quang Thái B2012257 */
 
 
 // render list sản phẩm đã thêm ra html và thêm vào bảng 
