@@ -1,5 +1,5 @@
 /* By Phạm Quang Thái B2012257 */
-// Js dùng cho trang chủ và trang chi tiết sp
+// Js dùng cho trang chủ, san pham và trang chi tiết sp
 
 // Nút ToTop
 let toTopBtn = document.querySelector('.toTop')
@@ -11,7 +11,6 @@ window.onscroll = () => {
     }
 }
 toTopBtn.addEventListener('click', () => {
-    // document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0
 })
 
@@ -34,6 +33,62 @@ function clock() {
     setTimeout(clock, 1000)
 }
 clock()
+
+/////////////// Hàm Hiện thông báo khi thêm thành công ///////////////////////
+// body là thẻ html body
+let body = document.querySelector('#container')
+function showSuccessMessage() {
+    // Tao 1 element co class toast
+    const htmlToast = document.createElement("div");
+    htmlToast.classList.add('toast')
+    htmlToast.innerHTML = `
+            <div class="toast__icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+
+            <div class="toast__body">
+                <h3 class="toast__title">Success</h3>
+                <p class="toast__msg">Thêm thành công vào giỏ hàng</p>
+            </div>
+            <div class="toast__close-icon">
+            <i class="fas fa-times" title="Đóng"></i>
+        </div>
+           
+    `
+    // Thêm toast vào body
+    body.append(htmlToast)
+    // Remove Message sau 3 giây
+    setTimeout(() => {
+        body.removeChild(htmlToast)
+    }, 3000)
+
+    // Đóng toast khi click
+    removeToastAfterClick(htmlToast)
+}
+
+// remove toast sau khi click nút close
+function removeToastAfterClick(htmlToast) {
+    let clockBtn = document.querySelectorAll('.toast__close-icon')
+        clockBtn.forEach((item) => {
+        item.addEventListener('click', () => {
+            body.removeChild(htmlToast)
+        })
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // ////////////////////chức năng thêm vào giỏ hàng dùng chung cho trang chủ, và trang chi tiết sản phẩm//////////////////////
 
@@ -97,7 +152,6 @@ function addInStorage(newProducts) {
     let id = newProducts.id;
     // Kiểm tra nếu mảng arrCart này rổng thì thêm vô luôn, ngược lại thì xét 2 trường hợp
     if (arrCart.length === 0) {
-        console.log("cacs")
         arrCart.push(newProducts)
     }
     else {
@@ -128,7 +182,9 @@ function isInLocalStorage(id, arrCart) {
 
 // Hiện 1 thông báo khi thêm thành công
 function addProductSuccess() {
-    alert("Thông báo thêm sản phẩm thành công!")
+    // alert("Thông báo thêm sản phẩm thành công!")
+    // Thong bao thêm thành công
+    showSuccessMessage()
 }
 // Hiển thị số sp trong giỏ
 function showQuantily() {

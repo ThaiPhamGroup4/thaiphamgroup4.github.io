@@ -236,5 +236,74 @@ article .footer__cskh {
     transition: opacity ease .7s;
     cursor: pointer;
 }
+
+
+/* Toast Message */
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 12px 0;
+    width: 330px;
+    border-left: 4px solid #47d864;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.342);
+    transition: all linear 0.3s;
+    position: fixed;
+    right: 10px;
+    top: 40px;
+    z-index: 999;
+    font-family: var(--font-primary);
+    /* animation */
+    animation: slideIn ease .5s, fadeOut ease-in .4s 1.6s forwards;
+        /* opacity: 0; */
+}
+
+/* animate */ 
+@keyframes slideIn {
+    from {
+        transform: translateX(calc(100% + 30px));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes fadeOut {
+    to {
+        transform: translateX(calc(100% + 30px));
+    }
+}
+.toast__icon {
+    color: #47d864;    
+}
+
+.toast__icon,
+.toast__close {
+  padding: 0 10px;
+}
+
+.toast__body {
+    flex-grow: 1;
+}
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+  
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+.toast__close-icon {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    padding: 0 10px;
+}
+  
 /* END */
 
