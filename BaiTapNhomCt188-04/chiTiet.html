@@ -81,7 +81,6 @@
     <!-- Đây là nội dung chính -->
     <main class="detail">
         <!-- Cấu trúc chung ĐỂ DÙNG ĐƯỢC FILE app.js -->
-        <!-- Vui lòng giữ nguyên những Class có sẳn trong này -->
         <section class="detail__item">
             <!-- Ảnh sách -->
             <div class="item__img-wraper">
@@ -103,14 +102,39 @@
         <section class="detail__description">
            <div class="description">
                 <h1>Mô tả chi tiết</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quibusdam dolorum nostrum voluptatum repellat delectus suscipit consequuntur earum corporis? Suscipit modi quaerat mollitia voluptas ducimus quo ut cupiditate nisi eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta doloribus obcaecati provident veniam natus, quam sunt iste id, dolore maiores, voluptate sint sed? Atque ullam consequuntur laboriosam sed dolor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat explicabo, aliquid, ipsam reprehenderit totam corporis rem ad, perferendis officia aut repellendus rerum blanditiis quaerat saepe ipsa excepturi deleniti illum expedita?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quibusdam dolorum nostrum voluptatum repellat delectus suscipit consequuntur earum corporis? Suscipit modi quaerat mollitia voluptas ducimus quo ut cupiditate nisi eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta doloribus obcaecati provident veniam natus, quam sunt iste id, dolore maiores, voluptate sint sed? Atque ullam consequuntur laboriosam sed dolor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat explicabo, aliquid, ipsam reprehenderit totam corporis rem ad, perferendis officia aut repellendus rerum blanditiis quaerat saepe ipsa excepturi deleniti illum expedita?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ducimus pariatur nostrum tempora a est, quae voluptatem incidunt iste, dolor, laudantium hic eaque ratione in fugit mollitia. Eaque, eveniet fugit.
+                </p>
+
            </div>
         </section>
         <section class="detail__comment">
             <!-- Này là bình luận -->
-            <!-- phần này để sau này e làm -->
             <div class="comment">
                 <h1>Bình luận</h1>
+                <div class="conmment__typing">
+                    <input type="text" name="Name" placeholder="Tên">
+                    <input type="text" name="comment-content" placeholder="Nhập đánh giá của bạn">
+                </div>
+
+                <button class="conment__send-btn">Send</button>
+
+                <div class="conmment-list__item">
+                    <div class="item__comment">
+                        <h1 class="comment__name">Thai Pham</h1>
+                        <p class="comment__content">Sách tốt, giao hàng nhanh cho 5 sao</p>
+                    </div>
+                    <div class="item__comment">
+                        <h1 class="comment__name">Hoang Mai</h1>
+                        <p class="comment__content">Good</p>
+                    </div>
+                    <div class="item__comment">
+                        <h1 class="comment__name">Anh</h1>
+                        <p class="comment__content">Sách đẹp</p>
+                    </div>
+                    <button class="load-more">Tải thêm đánh giá</button>
+                </div>
+               
             </div>
          </section>
     </main>
@@ -161,4 +185,5 @@
     </footer>
 </body>
 <script src="./app.js"></script>
+<script src="./chitiet.js"></script>
 </html>

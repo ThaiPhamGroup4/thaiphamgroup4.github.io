@@ -53,6 +53,11 @@
     font-size: 18px;
     display: block;
 }
+
+.info__title:hover {
+    color: rgb(129, 89, 36);
+}
+
 .info__arthor {
     font-size: 14px;
 }

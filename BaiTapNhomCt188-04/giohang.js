@@ -92,28 +92,22 @@ inputQuantily.forEach((item) => {
         //Biến lưu id của sản phẩm chỉnh sửa
         let idModify = e.target.parentNode.parentNode.children[0].innerText
         //Sửa lại quantily trong mảng chứa sp trong giỏ   
-        arrCart.map((item) => {
+        arrCart.forEach((item) => {
             if (item.id === idModify) {
                 item.quantily = Number(newValue)
             }
         })
-        // Gọi hàm này để thêm arrCart mới vào LocalStorage
+        // Gọi hàm này để thêm arrCart mới(sau khi chinh sửa) vào LocalStorage
         updateQuantily()
     }
 })
-// Khi focus vào ô input số lượng sản phẩm thì hiện nút xác nhận
-// inputQuantily.forEach((item) => {
-//     item.onfocus = function () {
-//         // this.nextElementSibling.style.display = 'inline-block'
-//     }
-// })
 
 // cập nhật lại số lượng sản phẩm trong Storage
 function updateQuantily() {
     btnConfirm.onclick = (e) => {
-        // ẩn nút xác nhận
         // Thông báo thành công
         alert('Chỉnh sửa thành công')
+        // showSuccessMessage()
         localStorage.setItem('Cart', JSON.stringify(arrCart))
         // reload lại trang 1 cái để render lại sản phẩm
         window.location.reload()
@@ -138,24 +132,18 @@ function totalMoney() {
     arrCart.forEach((item) => {
         money += Number(item.price * item.quantily)
       });
-      return money
+    return money
 }
 // Lấy danh sách các tên sản phẩm và số lượng từng sản phẩm đưa vào bảng
 
 function getListProduct(arrCart) {
+    // tính tổng tiền
     let total = totalMoney()
-        // tính tổng tiền
     let htmlTablePayment = document.querySelector('.total__wrapper table')
     let htmlNew = arrCart.map((item) => {
         let nameProduct = item.name
         let quantily = item.quantily
         let priceTotal = item.quantily * item.price
-        console.log(htmlTablePayment)
-        console.log(nameProduct)
-        console.log(quantily)
-        console.log(priceTotal)
-        console.log(total)
-
         // Thêm html vào bảng
         return `
             <tr>
@@ -163,14 +151,13 @@ function getListProduct(arrCart) {
                 <td>${quantily}</td>
                 <td>${priceTotal}</td>
             </tr>
-
         `
     })
-    htmlTablePayment.innerHTML += htmlNew.join('')
+    htmlTablePayment.innerHTML += htmlNew.join(' ')
     htmlTablePayment.innerHTML += `
         <tr>
             <th colspan="2">Thành tiền</th>
-            <td>${total}</td>
+            <td>${total}&#8363;</td>
         </tr>
     `
     

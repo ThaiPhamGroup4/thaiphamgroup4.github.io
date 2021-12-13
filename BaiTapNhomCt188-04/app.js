@@ -78,18 +78,6 @@ function removeToastAfterClick(htmlToast) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 // ////////////////////chức năng thêm vào giỏ hàng dùng chung cho trang chủ, và trang chi tiết sản phẩm//////////////////////
 
 // arrCart là mảng chứa các sản phẩm trong localStorage

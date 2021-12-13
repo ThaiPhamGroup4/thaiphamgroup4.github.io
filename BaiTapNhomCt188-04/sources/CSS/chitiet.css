@@ -66,3 +66,68 @@
     max-width: 900px;
     margin: 0 auto;
 }
+
+.conmment__typing {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[name='Name'] {
+    width: 160px;
+}
+input[name='comment-content'] {
+    flex-grow: 1;
+    margin-left: 14px;
+}
+
+input[name='Name'],
+input[name='comment-content'] {
+    padding: 8px 10px;
+    margin-top: 14px;
+
+}
+.conment__send-btn {
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    background-color: rgb(238, 137, 137);
+    cursor: pointer;
+}
+.conment__send-btn:active {
+    border: 1px solid;
+}
+
+.conmment-list__item {
+    margin: 20px 0 20px 0;
+    position: relative;
+    padding: 20px 0 60px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item__comment {
+    background-color: rgba(206, 204, 206, 0.329);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+.comment__name {
+    font-size: 16px;
+    padding: 6px 10px;
+}
+
+.comment__content {
+    padding: 2px 10px;
+    font-size: 14px;
+}
+
+.load-more {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border: none;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.342);
+    background-color: rgb(223, 126, 126);
+    cursor: pointer;
+}
