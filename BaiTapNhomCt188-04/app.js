@@ -4,7 +4,7 @@
 // Nút ToTop
 let toTopBtn = document.querySelector('.toTop')
 window.onscroll = () => {
-    if (this.scrollY < 200) {
+    if (this.scrollY < 160) {
         toTopBtn.style.opacity = 0;
     } else {
         toTopBtn.style.opacity = 1;
@@ -184,4 +184,6 @@ function showQuantily() {
     })
     cartNumber.innerText = quantily;
 }
+
+
 

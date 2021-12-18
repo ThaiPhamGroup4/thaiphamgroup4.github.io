@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Awecome font -->
+    <link rel="stylesheet" href="
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="
+    sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="
+    anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS dùng chung -->
+    <link rel="stylesheet" href="./sources/CSS/template.css">
+    <!-- Css rieng -->
+    <link rel="stylesheet" href="./sources/CSS/sanpham.css">
+    <title>Tất cả sản phẩm</title>
+
+</head>
+
+<body id="container">
+    <!-- Header -->
+    <header class="header">
+        <!-- header_phụ -->
+        <section class="header__sub-header">
+            <div class="sub-header__left">
+                <a href="#!">Tải ứng dụng về máy</a>
+                <span>|</span>
+                <a href="#!">Kết nối:</i></a>
+                <a href="#!"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#!"> <i class="fab fa-instagram"></i></i></a>
+                <span>| Time:</span>
+                <!-- Thẻ p chứ Đồng hồ Realtime -->
+                <p class="clock"></p>
+            </div>
+            <div class="sub-header__right">
+                <a href="#!">Chăm sóc khách hàng</a>
+                <span>|</span>
+                <a href="#!">Chính sách bảo mật</a>
+                <span>|</span>
+                <a href="">Liên hệ hợp tác: shop@web.com</a>
+            </div>
+        </section>
+        <section class="header__main-header">
+            <!-- header chính -->
+            <a href="./index.html" class="logo">
+                BOOKSTORE
+            </a>
+            <div class="main__header-search">
+                <input name="search__input" type="search" placeholder="Tìm kiếm sản phẩm">
+                <div class="main-header__suggest">
+                    <dl>
+                        <dt>Lịch sử:</dt>
+                        <dd>Từ điển</dd>
+                        <dd>sách học tiếng anh</dd>
+                        <hr />
+                        <dt>Gợi ý</dt>
+                        <dd>Doraemon</dd>
+                        <dd>Học 2000 từ vựng tiếng Anh</dd>
+                        <dd>Tiểu thuyết Your name</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="main__header-member">
+                <i class="fas fa-user"></i>
+                <a href="">Đăng nhập</a>
+
+                <span>|</span>
+                <i class="fas fa-user-plus"></i>
+                <a href="">Đăng ký</a>
+
+                <span>|</span>
+                <a href="./giohang.html" class="cart">
+                    <i class="fas fa-cart-plus">
+                        <span class="cart-number">0</span>
+                    </i>
+                    Giỏ hàng
+                </a>
+            </div>
+        </section>
+    </header>
+    <!-- END -->
+
+    <!-- MAIN -->
+    <main class="main-content">
+        <div class="main-content__banner">
+            <img src="./sources/images/5067373.jpg" alt="banner">
+        </div>
+
+        <aside class="main-content__side-bar">
+            <section href="#!" class="side-bar__item">
+                <p class="item__title">Phổ Biến</p>
+            </section>
+            <section href="#!" class="side-bar__item">
+                <p class="item__title">Bán Chạy</p>
+            </section>
+            <section href="#!" class="side-bar__item">
+                <p class="item__title">Hàng Mới</p>
+            </section>
+            <section href="#!" class="side-bar__item">
+                <p class="item__title">Thể Loại</p>
+            </section>
+            <section href="#!" class="side-bar__item">
+                <p class="item__title">Tác Giả</p>
+            </section>
+            <section href="#!" class="side-bar__item">
+                <p class="item__title">Giá Thấp</p>
+            </section>
+            <section href="#!" class="side-bar__item">
+                <p class="item__title">Giá Cao</p>
+            </section>
+
+        </aside>
+
+        <article class="main-content__products">
+            <section class="product-list__item">
+                <img src="./sources/images/CodeDaokysu.jpg" class="item__image" alt="">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Lập Trình Viên Đâu Phải Chỉ Biết Code</a>
+                    <p class="info__arthor">Phạm Huy Hoàng</p>
+                    <p class="price" hidden>126700</p>
+                    <p class="id" hidden>007</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 126.700</a>
+                </div>
+            </section>
+
+            <section class="product-list__item">
+                <img src="./sources/images/yourNamejpg.jpg" class="item__image" alt="">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Kimi no na wa</a>
+                    <p class="info__arthor">Makoto Shinkai</p>
+                    <p class="price" hidden>120000</p>
+                    <p class="id" hidden>002</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 120.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item">
+                <img src="./sources/images/24hParis.jpg" class="item__image" alt="24H in Paris">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">24H in Paris</a>
+                    <p class="info__arthor">Romi Moondi</p>
+                    <p class="price" hidden>70000</p>
+                    <p class="id" hidden>004</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 70.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item">
+                <img src="./sources/images/220294463-416-k543891.jpg" class="item__image" alt="">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">The house above the sea</a>
+                    <p class="info__arthor">J.Nicole</p>
+                    <p class="price" hidden>120000</p>
+                    <p class="id" hidden>001</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 120.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item">
+                <img src="./sources/images/bye-doraemon.jpg" class="item__image" alt="bye-doraemon">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Vĩnh Biệt, Doraemon</a>
+                    <p class="info__arthor">Fujiko Fujio</p>
+                    <p class="price" hidden>61000</p>
+                    <p class="id" hidden>005</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 61.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item">
+                <img src="./sources/images/english.jpg" class="item__image" alt="">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Tự học 2000 từ vựng tiếng Anh</a>
+                    <p class="info__arthor">Nhà Xuất Bản DHQG Hà Nội</p>
+                    <p class="price" hidden>54000</p>
+                    <p class="id" hidden>006</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 54.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item">
+                <img src="./sources/images/thang4lie.jpg" class="item__image" alt="Your lie in april">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Your lie in april</a>
+                    <p class="info__arthor">Arakawa Naoshi</p>
+                    <p class="price" hidden>80000</p>
+                    <p class="id" hidden>003</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 80.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item">
+                <img src="./sources/images/chasingashes.jpg" class="item__image" alt="Chasing Ashes">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Chasing Ashes</a>
+                    <p class="info__arthor">J.Scarlet</p>
+                    <p class="price" hidden>79000</p>
+                    <p class="id" hidden>008</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 79.000</a>
+                </div>
+            </section>
+
+            <a href="#!" class="load-book">Tải thêm sách</a>
+
+            <section class="product-list__item load-more--off">
+                <img src="./sources/images/DRBS.jpg" class="item__image" alt="DRBS2">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Dragon Ball Super</a>
+                    <p class="info__arthor">Toriyama Akira</p>
+                    <p class="price" hidden>51000</p>
+                    <p class="id" hidden>009</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 51.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item load-more--off">
+                <img src="./sources/images/meoStore.jpg" class="item__image" alt="Cô chủ nhỏ của cửa hàng thú cưng">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Cô chủ nhỏ của cửa hàng thú cưng</a>
+                    <p class="info__arthor">Giang Nam Hồng Đậu</p>
+                    <p class="price" hidden>49000</p>
+                    <p class="id" hidden>010</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 49.000</a>
+                </div>
+            </section>
+
+            <section class="product-list__item load-more--off">
+                <img src="./sources/images/doannguoc.jpg" class="item__image" alt="Đoãn Ngược">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Đoản ngược</a>
+                    <p class="info__arthor">ThanThan0610</p>
+                    <p class="price" hidden>48000</p>
+                    <p class="id" hidden>011</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 48.000</a>
+                </div>
+            </section>
+            
+            <section class="product-list__item load-more--off">
+                <img src="./sources/images/muaherucnang.jpg" class="item__image" alt="muaherucnang">
+                <div class="item__info">
+                    <a href="./chiTiet.html" class="info__title">Sau Lưng Mặt Trời Là Mùa Hè Rực Nắng</a>
+                    <p class="info__arthor">Nehy ( Neyuhy )</p>
+                    <p class="price" hidden>98000</p>
+                    <p class="id" hidden>012</p>
+                    <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 98.000</a>
+                </div>
+            </section>
+            <!-- </div> -->
+        </article>
+    </main>
+    <!-- End -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <article>
+            <div class="footer__cskh">
+                <section class="cskh__item">
+                    <div class="item__title">DỊCH VỤ</div>
+                    <ul>
+                        <li><a href="">Điều khoản sữ dụng</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Giới thiệu về Shop</a></li>
+                        <li><a href="">Hệ thống trung tâm - nhà sách</a></li>
+                    </ul>
+                </section>
+                <section class="cskh__item">
+                    <div class="item__title">HỔ TRỢ</div>
+                    <ul>
+                        <li><a href="">Chính sách đổi - trả - hoàn tiền</a></li>
+                        <li><a href="">Chính sách khách sỉ</a></li>
+                        <li><a href="">Phương thức vận chuyển</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                    </ul>
+                </section>
+                <section class="cskh__item">
+                    <div class="item__title">LIÊN HỆ</div>
+                    <ul>
+                        <li><a href="">Số A, phường B, C, Cần Thơ</a></li>
+                        <li><a href="">0909909990</a></li>
+                        <li><a href="">shop@web.com</a></li>
+                        <li><a href="">Facebook.com/shop</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer__place">
+                <section class="place">
+                    <p class="item__title"> ĐỊA CHỈ CỬA HÀNG</p>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.740982801863!2d105.15022761410596!3d9.177821439169005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a149a037e0bc87%3A0x1e6e5260e828628c!2zTmjDoCBzw6FjaCBGQUhBU0EgQ8OgIE1hdQ!5e0!3m2!1svi!2s!4v1638496506796!5m2!1svi!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <i class="fas fa-chevron-up toTop"> </i>
+    </footer>
+    <!-- End -->
+</body>
+<!-- <i class="fas fa-th"></i>
+<i class="fas fa-th-list"></i> -->
+<script src="./app.js"></script>
+<script>
+    // Làm chức năng cho nút tải thêm sách
+    let loadMoreBook = document.querySelector('.load-book')
+    let booksNew = document.querySelectorAll('.load-more--off')
+    loadMoreBook.addEventListener('click', () => {
+        loadMoreBook.style.display = "none"
+        booksNew.forEach((item) => {
+            item.classList.remove('load-more--off')
+            item.classList.add('load-more--on')
+        })
+    })
+</script>
+
+</html>

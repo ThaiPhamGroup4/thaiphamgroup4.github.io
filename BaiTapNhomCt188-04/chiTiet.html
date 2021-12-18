@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- HTMl dùng chung (Header và Footer) -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="./sources/CSS/template.css">
     <!-- Css riêng -->
     <link rel="stylesheet" href="./sources/CSS/chitiet.css">
+
     <title>Chi Tiết Sản Phẩm</title>
 </head>
 <body id="container">
@@ -80,62 +82,167 @@
 
     <!-- Đây là nội dung chính -->
     <main class="detail">
-        <!-- Cấu trúc chung ĐỂ DÙNG ĐƯỢC FILE app.js -->
         <section class="detail__item">
             <!-- Ảnh sách -->
             <div class="item__img-wraper">
-                <!-- Phần này k cần Css thêm nha chị, cái ảnh coi như hoàn thành -->
-                <img src="./sources/images/220294463-416-k543891.jpg" class="item__image"  alt="img" >
+                <img src="./sources/images/CodeDaokysu.jpg" class="item__image"  alt="img" >
             </div>
+
+        <!-- Cấu trúc chung ĐỂ DÙNG ĐƯỢC FILE app.js -->
             
             <!-- Thông tin  -->
             <div class="item__info">
-                <h1 href="" class="info__title">The house above the sea</h1>
-                <p class="info__arthor">Tác giả: J.Nicole</p>
-                <p class="price-show">Giá: 120.000&#8363;</p>
+                <h1 href="" class="info__title">Code Dạo Kí Sự - Lập Trình Viên Đâu Phải Chỉ Biết Code</h1>
+
+                <p class="info__author">
+                    <i class="fas fa-user-edit"></i> Tác giả:
+                    <a class="author-name" target="_blank" href="https://toidicodedao.com/about/"> Phạm Huy Hoàng</a> 
+                </p>  
+                
+                <p class="infor__star">
+                    <i class="bi bi-star-fill" ></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <i class="bi bi-star-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <i class="bi bi-star-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <i class="bi bi-star-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    <i class="bi bi-star-fill"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" style="color: yellow;">
+                        <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg> (50 đánh giá)&emsp;
+                    <span>|</span>
+                    <i class="bi bi-chat-square-dots"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-dots" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                    </svg> (45 nhận xét)&emsp;
+                    <span>|</span>
+                    <i class="bi bi-bag"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                    </svg> Đã bán 100+
+                </p>
+              
+                <div class="infor__price">
+                <h1 class="price-show">Giá: 120.000&#8363;
+                    <span class="price-show-1"><s>150.000&#8363</s></span>
+                    <span class="price-decrease"> Sale 20%</span>      
+                </h1>   
                 <p class="price" hidden>120000</p>
                 <p class="id" hidden>001</p>
-                <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Thêm Vào Giỏ</a>
+                </div>
+
+                <div class="info__delivery">
+                    <p class="delivery-place"><b>Địa điểm giao hàng:</b> Giao hàng đến... 
+                         <a href="#!" title="Thay đổi địa chỉ"style="color: blue;">Đổi địa chỉ</a>
+                    </p> 
+                
+                    <p class="delivery-time"><b>Thời gian giao hàng:</b> Dự kiến từ ngày...
+                         <a href="#!" title="Thay đổi địa chỉ"style="color: blue;">Đổi địa chỉ</a>
+                    </p>
+                
+                    <p class="delivery-regulation"><b>Chính sách đổi trả:</b> Đổi trả trong 7 ngày 
+                         <a href="#!" title="Xem chi tiết" style="color: blue;">Xem chi tiết</a>
+                    </p>
+                </div>
+                 <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Thêm Vào Giỏ</a>
+            
+                
             </div>
+
+               
+            
         </section>
 
         <section class="detail__description">
            <div class="description">
-                <h1>Mô tả chi tiết</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quibusdam dolorum nostrum voluptatum repellat delectus suscipit consequuntur earum corporis? Suscipit modi quaerat mollitia voluptas ducimus quo ut cupiditate nisi eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta doloribus obcaecati provident veniam natus, quam sunt iste id, dolore maiores, voluptate sint sed? Atque ullam consequuntur laboriosam sed dolor. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat explicabo, aliquid, ipsam reprehenderit totam corporis rem ad, perferendis officia aut repellendus rerum blanditiis quaerat saepe ipsa excepturi deleniti illum expedita?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ducimus pariatur nostrum tempora a est, quae voluptatem incidunt iste, dolor, laudantium hic eaque ratione in fugit mollitia. Eaque, eveniet fugit.
-                </p>
+                <h1 class="description-title">Mô tả chi tiết</h1>
+                <div class="description-content">
+                   Nếu các bạn có đọc các blog về lập trình ở Việt Nam thì có lẽ cái tên Tôi đi code dạo không có gì quá xa lạ đối 
+                   với các bạn.
 
+Về tác giả của blog Tôi đi code dạo, anh tên thật là Phạm Huy Hoàng, một Developer Full Stack, cựu sinh viên trường FPT University, 
+hiện tại anh đang học Thạc sĩ Computer Science tại Đại học Lancaster ở Anh (học bổng $18000). Trước khi qua Xứ Sở Sương Mù, anh đã 
+từng làm việc tại FPT Software và ASWIG Solutions. <br /> <br />
+Với mong muốn chia sẻ kinh nghiệm học lập trình và các kỹ năng mà anh đã trải qua trong suốt quá trình học và làm việc với tư cách
+ là người đi trước cũng như là một Developer Full Stack, nên anh đã quyết định xuất bản sách “Code dạo ký sự - lập trình viên đâu 
+ phải chỉ biết code”.<br /> <br />
+
+Hiện tại, trên thị trường sách Việt Nam với chủ đề về IT nói chung và lập trình viên nói riêng đều rất khan hiếm, chủ yếu là dịch lại 
+từ tác giả nước ngoài. Chúng ta đã quá mải mê vào những đầu sách dạng “Những cách làm giàu hay đại loại vậy” đã khiến chúng ta ảo tưởng
+ phần nào về bản thân mà thật sự kỹ năng của bạn không cho phép để làm điều đó.
+<a class="click-to-read-more" href="#!" style="color: rgb(8, 69, 119);">...Xem thêm</a>
+<br /> <br />
+<p class="read-more read-more--off">Vì thế chúng ta cần những đầu sách để định hướng nghề nghiệp và xây dựng kiến thức thật vững chắc,
+     khi đó bạn mới có thể nghĩ tới những điều tuyệt vời hơn trong tương lai. “Code dạo ký sự – lập trình viên đâu phải chỉ biết code”
+      sẽ đem lại cho bạn điều đó.
+<br /> <br />
+Một số sách công nghệ hiện nay quá khô cứng, tập trung nhiều vào kĩ thuật nên khó tiếp thu. Số sách cò lại đa phần là về thuật toán,
+ khá cũ, hoặc tập trung vào một công nghệ, rất mau hết hạn.
+Cuốn sách này hoàn toàn khác những cuốn sách về IT và công nghệ trên thị thường. Vậy nó có điểm nào đặc biệt?</p>
+<a class="click-to-remove-more" href="#!" style="color: rgb(8, 69, 119);display: none;">Thu gọn</a>
+
+                </div>
            </div>
         </section>
-        <section class="detail__comment">
+
             <!-- Này là bình luận -->
+        <section class="detail__comment">
             <div class="comment">
-                <h1>Bình luận</h1>
-                <div class="conmment__typing">
-                    <input type="text" name="Name" placeholder="Tên">
-                    <input type="text" name="comment-content" placeholder="Nhập đánh giá của bạn">
-                </div>
+                <h1 class="comment-title">Đánh Giá Sản Phẩm</h1>
+                <div class="comment-stars">
+                    <form action="">
+                      <input class="star star-5" id="star-5" type="radio" name="star"/>
+                      <label class="star star-5" for="star-5"></label>
+                      <input class="star star-4" id="star-4" type="radio" name="star"/>
+                      <label class="star star-4" for="star-4"></label>
+                      <input class="star star-3" id="star-3" type="radio" name="star"/>
+                      <label class="star star-3" for="star-3"></label>
+                      <input class="star star-2" id="star-2" type="radio" name="star"/>
+                      <label class="star star-2" for="star-2"></label>
+                      <input class="star star-1" id="star-1" type="radio" name="star"/>
+                      <label class="star star-1" for="star-1"></label>
+                    </form>
+                  </div>
+                <form >
+                    <input class="comment-info" type="text" id="fname" name="firstname" placeholder="Viết nhận xét của bạn...">          
+                    <input class="comment-send"type="submit" value="Gửi">
+                    <!-- aded -->
+                    <div class="conmment-list__item">
+                        <div class="item__comment">
+                            <h1 class="comment__name">Thai Pham</h1>
+                            <p class="comment__content">Sách tốt, giao hàng nhanh cho 5 sao</p>
+                        </div>
 
-                <button class="conment__send-btn">Send</button>
+                        <div class="item__comment">
+                            <h1 class="comment__name">Hoang Mai</h1>
+                            <p class="comment__content">Good</p>
+                        </div>
 
-                <div class="conmment-list__item">
-                    <div class="item__comment">
-                        <h1 class="comment__name">Thai Pham</h1>
-                        <p class="comment__content">Sách tốt, giao hàng nhanh cho 5 sao</p>
+                        <div class="item__comment">
+                            <h1 class="comment__name">Anh</h1>
+                            <p class="comment__content">Sách đẹp</p>
+                        </div>
+                        <div class="item__comment">
+                            <h1 class="comment__name">Guest</h1>
+                            <p class="comment__content">Sách chia sẻ nhiều kiến thức</p>
+                        </div>
+
+                        <button class="load-more">Tải thêm đánh giá</button>
                     </div>
-                    <div class="item__comment">
-                        <h1 class="comment__name">Hoang Mai</h1>
-                        <p class="comment__content">Good</p>
-                    </div>
-                    <div class="item__comment">
-                        <h1 class="comment__name">Anh</h1>
-                        <p class="comment__content">Sách đẹp</p>
-                    </div>
-                    <button class="load-more">Tải thêm đánh giá</button>
-                </div>
-               
+                  </form>
             </div>
+
          </section>
     </main>
 
@@ -181,9 +288,24 @@
                 </section>
             </div>
         </article>
-        <a class="toTop" href="#container"></a>
+        <i class="fas fa-chevron-up toTop"> </i>
     </footer>
 </body>
 <script src="./app.js"></script>
-<script src="./chitiet.js"></script>
+<script>
+    let readMore = document.querySelector('.read-more')
+    document.querySelector('.click-to-read-more').onclick = () => {
+        readMore.classList.remove('read-more--off')
+        readMore.classList.add('read-more--on')
+        document.querySelector('.click-to-read-more').style.display ="none"
+        document.querySelector('.click-to-remove-more').style.display ="block"
+    }
+    document.querySelector('.click-to-remove-more').onclick = () => {
+        readMore.classList.remove('read-more--on')
+        readMore.classList.add('read-more--off')
+        document.querySelector('.click-to-read-more').style.display ="block"
+        document.querySelector('.click-to-remove-more').style.display ="none"
+    }
+</script>
+
 </html>
