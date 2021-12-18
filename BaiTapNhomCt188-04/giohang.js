@@ -31,7 +31,7 @@ function renderProduct() {
                 <tr>
                     <td hidden>${item.id}</td>
                     <td><img class="table__product-img" src="${item.src}" alt="img" ></td>
-                    <td><p class="table__product-name">${item.name}</p></td>
+                    <td><a href="./chitiet.html" class="table__product-name">${item.name}</a></td>
                     <td>
                         <input type="number" value="${item.quantily}" min="1" name="inputQuantily" class="table__product-quantily" />
                         

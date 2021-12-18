@@ -37,6 +37,9 @@
     padding: 8px; 
 }
 
+.table__product-name:hover {
+    color: rgba(0, 0, 255, 0.63);
+}
 .table__product-img {
     height: 100px;
 }

@@ -21,17 +21,16 @@
 <body id="container">
     <!-- Header -->
     <header class="header">
-        <!-- header_phụ -->
         <section class="header__sub-header">
             <div class="sub-header__left">
                 <a href="#!">Tải ứng dụng về máy</a>
                 <span>|</span>
-                <a href="#!">Kết nối:</i></a>
+                <a href="#!">Kết nối:</i></a> 
                 <a href="#!"> <i class="fab fa-facebook-square"></i></a>
                 <a href="#!"> <i class="fab fa-instagram"></i></i></a>
                 <span>| Time:</span>
                 <!-- Thẻ p chứ Đồng hồ Realtime -->
-                <p class="clock"></p>
+                <p class="clock"></p> 
             </div>
             <div class="sub-header__right">
                 <a href="#!">Chăm sóc khách hàng</a>
@@ -49,21 +48,21 @@
             <div class="main__header-search">
                 <input name="search__input" type="search" placeholder="Tìm kiếm sản phẩm">
                 <div class="main-header__suggest">
-                    <dl>
-                        <dt>Lịch sử:</dt>
-                        <dd>Từ điển</dd>
-                        <dd>sách học tiếng anh</dd>
+                    <div>
+                        <h5>Lịch sử:</h5>
+                        <p>Từ điển</p>
+                        <p>sách học tiếng anh</p>
                         <hr />
-                        <dt>Gợi ý</dt>
-                        <dd>Doraemon</dd>
-                        <dd>Học 2000 từ vựng tiếng Anh</dd>
-                        <dd>Tiểu thuyết Your name</dd>
-                    </dl>
+                        <h5>Gợi ý</h5>
+                        <p>Doraemon</p>
+                        <p>Học 2000 từ vựng tiếng Anh</p>
+                        <p>Tiểu thuyết Your name</p>
+                    </div>
                 </div>
             </div>
             <div class="main__header-member">
-                <i class="fas fa-user"></i>
-                <a href="">Đăng nhập</a>
+                <i class="fas fa-user"></i> 
+                <a href="">Đăng nhập</a> 
 
                 <span>|</span>
                 <i class="fas fa-user-plus"></i>
@@ -72,13 +71,13 @@
                 <span>|</span>
                 <a href="./giohang.html" class="cart">
                     <i class="fas fa-cart-plus">
-                        <span class="cart-number">0</span>
-                    </i>
+                        <span class="cart-number"></span>
+                    </i> 
                     Giỏ hàng
                 </a>
             </div>
         </section>
-    </header>
+   </header>
     <!-- END -->
 
     <!-- MAIN -->
@@ -88,26 +87,42 @@
         </div>
 
         <aside class="main-content__side-bar">
-            <section href="#!" class="side-bar__item">
-                <p class="item__title">Phổ Biến</p>
+            <h3 class="side-bar__title">Tìm kiếm theo</h3>
+            <section href="#!" class="side-bar__category">
+                <p class="category__title">Phổ Biến</p>
             </section>
-            <section href="#!" class="side-bar__item">
-                <p class="item__title">Bán Chạy</p>
+            <section href="#!" class="side-bar__category">
+                <p class="category__title">Bán Chạy</p>
             </section>
-            <section href="#!" class="side-bar__item">
-                <p class="item__title">Hàng Mới</p>
+            <section href="#!" class="side-bar__category">
+                <p class="category__title">Hàng Mới</p>
             </section>
-            <section href="#!" class="side-bar__item">
-                <p class="item__title">Thể Loại</p>
+            <section href="#!" class="side-bar__category book-category">
+                <p class="category__title book-category-menu">Thể Loại 
+                    <i class="fas fa-chevron-down iconActive"> </i>
+                </p>
+                <ul class="menu off">
+                    <li class="menu__item">Chính trị - pháp luật</li>
+                    <li class="menu__item">Khoa học công nghệ - Kinh tế</li>
+                    <li class="menu__item">Văn học nghệ thuật</li>
+                    <li class="menu__item">Văn hóa xã hội - Lịch sử</li>
+                    <li class="menu__item">Giáo trình</li>
+                    <li class="menu__item">Truyện, tiểu thuyết</li>
+                    <li class="menu__item">Tâm lý, tâm linh, tôn giáo</li>
+                    <li class="menu__item">Sách thiếu nhi</li>
+                    <li class="menu__item">Lịch sử - tư liệu</li>
+                </ul>
+                
             </section>
-            <section href="#!" class="side-bar__item">
-                <p class="item__title">Tác Giả</p>
+            
+            <section href="#!" class="side-bar__category">
+                <p class="category__title">Tác Giả</p>
             </section>
-            <section href="#!" class="side-bar__item">
-                <p class="item__title">Giá Thấp</p>
+            <section href="#!" class="side-bar__category">
+                <p class="category__title">Giá Thấp</p>
             </section>
-            <section href="#!" class="side-bar__item">
-                <p class="item__title">Giá Cao</p>
+            <section href="#!" class="side-bar__category">
+                <p class="category__title">Giá Cao</p>
             </section>
 
         </aside>
@@ -312,6 +327,17 @@
             item.classList.add('load-more--on')
         })
     })
+
+    // Ẩn/Hiện menu thể loại
+    let bookMenu = document.querySelector('.book-category')
+    let menu = document.querySelector('.menu')
+    bookMenu.onclick = () => {
+        let containOffClass = menu.classList.contains('off')
+        if(containOffClass) {
+           menu.classList.toggle('on')
+        }
+    }
+
 </script>
 
 </html>
