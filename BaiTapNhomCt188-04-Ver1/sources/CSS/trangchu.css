@@ -184,11 +184,7 @@
     font-size: 3rem;
     color: white;
 }
-.prev,
-.next {
-    height: 2rem;
-    border: 0;
-}
+
 .frame {
     list-style: none;
     width: 100%;
@@ -205,6 +201,5 @@
     }
 }
 
-/* Slide */
 /* END */
 
