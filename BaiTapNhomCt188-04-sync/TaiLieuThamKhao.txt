@@ -1,0 +1,31 @@
+-------- Dự án web BOOKSTORE --------
+
+I> Nhóm 4:
+    Pham Quang Thai - B2012257
+    Trinh Hoang Mai - B1906712
+    Luu Thi Duong Anh - B2007221		
+    
+II> Tài nguyên sử dụng trong trang:
+
+    - Source ảnh, thông tin sách: https://www.wattpad.com/home
+    - Ảnh banner: google hình Ảnh
+    - Thư viện swiper (trong ver 2): https://swiperjs.com/
+    - Awesome icon: https://fontawesome.com/
+    - Google map embed: https://maps.google.com/
+
+III> Tài liệu tham khảo:
+    - https://www.fahasa.com/
+    - https://web4s.vn/view-demo/dogiadung-01
+    - https://fullstack.edu.vn/learning/javascript-co-ban
+    - https://tiki.vn/nha-sach-tiki
+    - https://www.thuthuatweb.net/
+    - https://xuanthulab.net/danh-sach-ma-html-cac-ky-tu-dac-biet.html
+    - Slide bài giảng
+
+    - https://getbootstrap.com/
+    - https://www.w3schools.com/
+    - https://developer.mozilla.org/en-US/
+    - https://stackoverflow.com/
+    - https://www.regextester.com/106725
+    - https://codepen.io/trending
+    - https://stackoverflow.com/questions/14850553/javascript-regex-for-password-containing-at-least-8-characters-1-number-1-uppe
