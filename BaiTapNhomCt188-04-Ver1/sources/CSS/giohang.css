@@ -1,0 +1,121 @@
+/* File css của trang giỏ hàng */
+/* By Phạm Quang Thái B2012257 */
+.content {
+    font-family: arial, sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 66% 33%;
+    gap: 1%;
+}
+.deleteBtn {
+    padding: 4px 0;
+}
+.content__product {
+    width: 100%;
+    height: auto;
+}
+
+.content__into-money {
+    width: 100%;
+    padding: 4px;
+    border: 1px solid rgb(195, 240, 248);
+}
+
+.product__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product__table th {
+    font-size: 14px;
+}
+.product__table td, .product__table th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px; 
+}
+
+.table__product-name:hover {
+    color: rgba(0, 0, 255, 0.63);
+}
+.table__product-img {
+    height: 100px;
+}
+.product__table tr td {
+    text-align: center;
+}
+.product__table input[name="inputQuantily"] {
+    width: 42px;
+    padding: 2px 0;
+}
+.confirm {
+    padding: 4px 0;
+}
+
+/* Phần Thanh Toán */
+.total__wrapper {
+    font-size: 14px;
+    padding: 10px;
+}
+.total__wrapper table {
+    border: 1px solid;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.total__wrapper table td, .total__wrapper th {
+    border: 1px solid #dddddd;
+    padding: 8px; 
+}
+
+.total__wrapper table tr td{
+    text-align: center;
+}
+
+/* Phần liên hệ */
+.contact__wrapper {
+    padding: 10px;
+    font-size: 14px;
+}
+.contact__wrapper table {
+    width: 100%;
+}
+.contact__name, .contact__phone, .contact__location {
+    padding: 6px 0;
+    width: 100%;
+}
+
+.contact__pay-type td {
+    padding: 8px 0;
+}
+
+.contact__submit-form {
+    margin-top: 10px;
+    /* text-align: center; */
+}
+
+.contact__submit-form input {
+    padding: 8px;
+    background-color: burlywood;
+    border: none;
+    cursor: pointer;
+    transition: all .2s linear;
+    font-size: 16px;
+}
+.contact__submit-form input:hover {
+    transform: translateY(-4px);
+}
+.contact__submit-form a  {
+    padding: 9px;
+    border-radius: 2px;
+    background-color: #887f7f;
+    cursor: pointer;
+}
+.into-money__title {
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-align: center;
+}

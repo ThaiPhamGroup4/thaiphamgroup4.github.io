@@ -1,0 +1,271 @@
+
+<!-- Tham khảo : 
+    https://www.regextester.com/106725,
+    https://stackoverflow.com/questions/14850553/javascript-regex-for-password-containing-at-least-8-characters-1-number-1-uppe
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- HTMl dùng chung (Header và Footer) -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./sources/images/favicon-16x16.png">
+    <!-- CDN Awecome font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- css chung -->
+    <link rel="stylesheet" href="./sources/CSS/template.css">
+    <!-- css rieng -->
+    <link rel="stylesheet" href="./sources/CSS/dangky.css">
+    <title>Đăng Ký Tài Khoản</title>
+</head>
+
+<body id="container">
+    <header class="header">
+        <section class="header__sub-header">
+            <div class="sub-header__left">
+                <a href="#!">Tải ứng dụng về máy</a>
+                <span>|</span>
+                <a href="#!">Kết nối:</i></a> 
+                <a href="#!"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#!"> <i class="fab fa-instagram"></i></i></a>
+                <span>| Time:</span>
+                <!-- Thẻ p chứ Đồng hồ Realtime -->
+                <p class="clock"></p> 
+            </div>
+            <div class="sub-header__right">
+                <a href="#!">Chăm sóc khách hàng</a>
+                <span>|</span>
+                <a href="#!">Chính sách bảo mật</a>
+                <span>|</span>
+                <a href="">Liên hệ hợp tác: shop@web.com</a>
+            </div>
+        </section>
+        <section class="header__main-header">
+            <!-- header chính -->
+            <a href="./index.html" class="logo">
+                BOOKSTORE
+            </a>
+            <div class="main__header-search">
+                <input name="search__input" type="search" placeholder="Tìm kiếm sản phẩm">
+                <div class="main-header__suggest">
+                    <div>
+                        <h5>Lịch sử:</h5>
+                        <p>Từ điển</p>
+                        <p>sách học tiếng anh</p>
+                        <hr />
+                        <h5>Gợi ý</h5>
+                        <p>Doraemon</p>
+                        <p>Học 2000 từ vựng tiếng Anh</p>
+                        <p>Tiểu thuyết Your name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__header-member">
+                <i class="fas fa-user"></i> 
+                <a href="./dangnhap.html">Đăng nhập</a> 
+
+                <span>|</span>
+                <i class="fas fa-user-plus"></i>
+                <a href="./dangky.html">Đăng ký</a>
+
+                <span>|</span>
+                <a href="./giohang.html" class="cart">
+                    <i class="fas fa-cart-plus">
+                        <span class="cart-number"></span>
+                    </i> 
+                    Giỏ hàng
+                </a>
+            </div>
+        </section>
+   </header>
+
+    <main class="main">
+        <article>
+            <div class="left">
+                <img src="./sources/images/8870a5c65b6378368766e8c4df5aa1e3.png" alt="icon">
+                <p>
+                    Mỗi một trang giấy, mỗi bước tương lai
+                </p>
+            </div>
+
+            <div class='signup_page'>
+                <form action="dangnhap.html" onsubmit="return handleSubmit()">
+                    <h1>Khách Hàng Đăng Ký</h1>
+                    <div class="signup_field">
+                        <label for="userName">Tên khách hàng</label>
+                        <input type="text" id="userName">
+                        <p id="userNameErrMessage"></p>
+                    </div>
+                    <div class="signup_field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <p id="emailErrMessage"></p>
+                    </div>
+                    <div class="signup_field">
+                        <label for="phoneNumber">Số điện thoại</label>
+                        <input type="text" id="phoneNumber">
+                        <p id="phoneNumberErrMessage"></p>
+                    </div>
+                    <div class="signup_field">
+                        <label for="pass1">Mật khẩu</label>
+                        <input type="password" id="pass1">
+                        <p id="pass1ErrMessage"></p>
+                    </div>
+                    <div class="signup_field">
+                        <label for="pass2">Nhập lại mật khẩu</label>
+                        <input type="password" id="pass2">
+                        <p id="pass2ErrMessage"></p>
+                    </div>
+                    <button type="submit">Đăng ký</button>
+                    <div class="login_link">
+                        Bạn đã có tài khoản?
+                        <a href="dangnhap.html"> Đăng nhập</a>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <article>
+            <div class="footer__cskh">
+                <section class="cskh__item">
+                    <div class="item__title">DỊCH VỤ</div>
+                    <ul>
+                        <li><a href="">Điều khoản sữ dụng</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Giới thiệu về Shop</a></li>
+                        <li><a href="">Hệ thống trung tâm - nhà sách</a></li>
+                    </ul>
+                </section>
+                <section class="cskh__item">
+                    <div class="item__title">HỔ TRỢ</div>
+                    <ul>
+                        <li><a href="">Chính sách đổi - trả - hoàn tiền</a></li>
+                        <li><a href="">Chính sách khách sỉ</a></li>
+                        <li><a href="">Phương thức vận chuyển</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                    </ul>
+                </section>
+                <section class="cskh__item">
+                    <div class="item__title">LIÊN HỆ</div>
+                    <ul>
+                        <li><a href="">Số A, phường B, C, Cần Thơ</a></li>
+                        <li><a href="">0909909990</a></li>
+                        <li><a href="">shop@web.com</a></li>
+                        <li><a href="">Facebook.com/shop</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer__place">
+                <section class="place">
+                    <p class="item__title"> ĐỊA CHỈ CỬA HÀNG</p>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.740982801863!2d105.15022761410596!3d9.177821439169005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a149a037e0bc87%3A0x1e6e5260e828628c!2zTmjDoCBzw6FjaCBGQUhBU0EgQ8OgIE1hdQ!5e0!3m2!1svi!2s!4v1638496506796!5m2!1svi!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <i class="fas fa-chevron-up toTop"> </i>
+    </footer>
+</body>
+<script>
+    clearErrOnInput()
+    function clearErrOnInput() {
+        let allInput = document.querySelectorAll('.signup_field input')
+        allInput.forEach((item) => {
+            item.oninput = () => {
+                console.log(item.nextElementSibling)
+                item.nextElementSibling.innerText = ''
+            }
+        })
+    }
+    function handleSubmit() {
+        let fullname = document.getElementById('userName');
+        let number = document.getElementById("phoneNumber");
+        let pass1 = document.getElementById("pass1");
+        let pass2 = document.getElementById("pass2");
+        let email = document.getElementById("email");
+        let check = true;
+        // if (localStorage.getItem("email")) {
+        //     localStorage.removeItem("email");
+        // }
+        // if (localStorage.getItem("password")) {
+        //     localStorage.removeItem("password");
+        // }
+
+        if (fullname.value.trim() === '') {
+            document.getElementById('userNameErrMessage').innerHTML = 'Họ và tên không được để trống';
+            check = false;
+        }
+        else {
+            document.getElementById('userNameErrMessage').innerHTML = '';
+        }
+
+        if (!email.value.match(/\S+@\S+\.\S+/)) {
+            document.getElementById("emailErrMessage").innerHTML = "Email không đúng định dạng";
+            check = false;
+        }
+        else {
+            document.getElementById('emailErrMessage').innerHTML = '';
+        }
+
+        if (!number.value.match(/(84|0[3|5|7|8|9])+([0-9]{8})\b/)) {
+            document.getElementById("phoneNumberErrMessage").innerHTML = 'Số điện thoại đang bỏ trống hoặc không đúng định dạng';
+            check = false
+        }
+        else {
+            document.getElementById("phoneNumberErrMessage").innerHTML = '';
+        }
+// checkPass
+        
+        if (pass1.value === '') {
+            document.getElementById("pass1ErrMessage").innerHTML = "Mật khẩu không được để trống";
+            check = false;
+        }
+        else {
+            // document.getElementById("pass1ErrMessage").innerHTML = '';
+            validatePassValue()
+        }
+
+        function validatePassValue() {
+            let regexPass = /^(?=.*\d)[a-zA-Z0-9]{8,}$/;
+            if(regexPass.test(pass1.value)) {
+                document.getElementById("pass1ErrMessage").innerText = ""
+
+            }
+            else {
+                document.getElementById("pass1ErrMessage").innerText = "Độ dài mật khẩu ít nhất 8 ký tự và có ít nhất 1 số"
+                check = false;
+            }
+        }
+
+        if (pass2.value === '') {
+            document.getElementById("pass2ErrMessage").innerHTML = "Vui lòng nhập lại mật khẩu";
+            check = false;
+        }
+     
+        else if (pass1.value != pass2.value) {
+            document.getElementById("pass2ErrMessage").innerHTML = "Mật khẩu không trùng khớp";
+            check = false;
+        }
+        else {
+            document.getElementById("pass2ErrMessage").innerHTML = '';
+        }
+
+        if (check == true) {
+            localStorage.setItem("email", email.value);
+            localStorage.setItem("password", pass1.value);
+        }
+       
+        return check;
+    }   
+
+</script>
+<script src="./app.js"></script>
+</html>

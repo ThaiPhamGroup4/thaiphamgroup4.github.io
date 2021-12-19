@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./sources/images/favicon-16x16.png">
+    <!-- Swiper  -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+    <!-- CDN Awecome font --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css riêng -->
+    <link rel="stylesheet" href="./sources/CSS/trangchu.css">
+    <!-- Css dùng chung -->
+    <link rel="stylesheet" href="./sources/CSS/template.css">
+    <title>Trang chủ</title>
+    <style>
+        
+    </style>
+</head>
+<body id="container">
+   <header class="header">
+        <section class="header__sub-header">
+            <div class="sub-header__left">
+                <a href="#!">Tải ứng dụng về máy</a>
+                <span>|</span>
+                <a href="#!">Kết nối:</i></a> 
+                <a href="#!"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#!"> <i class="fab fa-instagram"></i></i></a>
+                <span>| Time:</span>
+                <!-- Thẻ p chứ Đồng hồ Realtime -->
+                <p class="clock"></p> 
+            </div>
+            <div class="sub-header__right">
+                <a href="#!">Chăm sóc khách hàng</a>
+                <span>|</span>
+                <a href="#!">Chính sách bảo mật</a>
+                <span>|</span>
+                <a href="">Liên hệ hợp tác: shop@web.com</a>
+            </div>
+        </section>
+        <section class="header__main-header">
+            <!-- header chính -->
+            <a href="./index.html" class="logo">
+                BOOKSTORE
+            </a>
+            <div class="main__header-search">
+                <input name="search__input" type="search" placeholder="Tìm kiếm sản phẩm">
+                <div class="main-header__suggest">
+                    <div>
+                        <h5>Lịch sử:</h5>
+                        <p>Từ điển</p>
+                        <p>sách học tiếng anh</p>
+                        <hr />
+                        <h5>Gợi ý</h5>
+                        <p>Doraemon</p>
+                        <p>Học 2000 từ vựng tiếng Anh</p>
+                        <p>Tiểu thuyết Your name</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__header-member">
+                <i class="fas fa-user"></i> 
+                <a href="./dangnhap.html">Đăng nhập</a> 
+
+                <span>|</span>
+                <i class="fas fa-user-plus"></i>
+                <a href="./dangky.html">Đăng ký</a>
+
+                <span>|</span>
+                <a href="./giohang.html" class="cart">
+                    <i class="fas fa-cart-plus">
+                        <span class="cart-number"></span>
+                    </i> 
+                    Giỏ hàng
+                </a>
+            </div>
+        </section>
+   </header>
+<!-- END -->
+
+<!-- MAIN -->
+   <main class="content">
+       <!-- Slider -->
+       <article class="slider">
+            <div class="slides">
+                <ul class="frame">
+                    <img class="slide clone " src="./sources/images/5067373.jpg" alt="">
+                    <img class="slide clone active" src="https://salt.tikicdn.com/cache/w1080/ts/banner/9f/01/46/4543f0a3b942eac9d845dd8c3d5c715e.png.webp" alt="">
+                </ul>
+            </div>
+            <button class="prev" style="display: none;">previous</button>
+            <button class="next" style="display: none;">next</button>
+       </article>
+
+        <h1 class="content__title">Danh Mục Nổi Bật</h1>
+        <article class="content__category">
+            <div class="category__list-category">
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Tiểu Thuyết</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Học Lập Trình</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Sách Nấu Ăn</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Giáo Trình</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Truyện Tranh</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Truyện Trinh Thám</p>
+                </a>
+            </div>
+            <div class="category__list-category">
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Kỹ Năng Sống</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Bí Quyết Làm Giàu</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Sách Tham Khảo</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Truyện Cười</p>
+                </a>
+                <a href="./sanpham.html" class="list-category__item">   
+                    <i class="far fa-bookmark"></i>
+                    <p>Sách Khoa Học</p>
+                </a>
+                
+            </div>
+        </article>
+
+<!-- Hightlights Products -->
+        <h1 class="content__title">Tác Phẩm Nổi Bật</h1>
+        <article class="content__product-List"> 
+            <!-- Danh sách sản phẩm -->
+                <section class="product-list__item">
+                    <img src="./sources/images/220294463-416-k543891.jpg" class="item__image" alt="">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">The house above the sea</a>
+                        <p class="info__arthor">J.Nicole</p>
+                        <p class="price" hidden>120000</p>
+                        <p class="id" hidden>001</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 120.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/yourNamejpg.jpg" class="item__image" alt="">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Kimi no na wa</a>
+                        <p class="info__arthor">Makoto Shinkai</p>
+                        <p class="price" hidden>120000</p>
+                        <p class="id" hidden>002</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ">Mua: 120.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/thang4lie.jpg" class="item__image" alt="Your lie in april">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Your lie in april</a>
+                        <p class="info__arthor">Arakawa Naoshi</p>
+                        <p class="price" hidden>80000</p>
+                        <p class="id" hidden>003</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 80.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/24hParis.jpg" class="item__image" alt="24H in Paris">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">24H in Paris</a>
+                        <p class="info__arthor">Romi Moondi</p>
+                        <p class="price" hidden>70000</p>
+                        <p class="id" hidden>004</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 70.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/bye-doraemon.jpg" class="item__image" alt="bye-doraemon">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Vĩnh Biệt, Doraemon</a>
+                        <p class="info__arthor">Fujiko Fujio</p>
+                        <p class="price" hidden>61000</p>
+                        <p class="id" hidden>005</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 61.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/english.jpg" class="item__image" alt="">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Tự học 2000 từ vựng tiếng Anh</a>
+                        <p class="info__arthor">Nhà Xuất Bản DHQG Hà Nội</p>
+                        <p class="price" hidden>54000</p>
+                        <p class="id" hidden>006</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 54.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/CodeDaokysu.jpg" class="item__image" alt="Code dạo">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Lập Trình Viên Đâu Phải Chỉ Biết Code</a>
+                        <p class="info__arthor">Phạm Huy Hoàng</p>
+                        <p class="price" hidden>120000</p>
+                        <p class="id" hidden>007</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 120.000</a>
+                    </div>
+                </section>
+        </article>
+
+<!-- New update Products -->
+        <h1 class="content__title">Mới Cập Nhật</h1>
+        <article class="content__product-List">
+                <section class="product-list__item">
+                    <img src="./sources/images/yourNamejpg.jpg" class="item__image" alt="">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Kimi no na wa</a>
+                        <p class="info__arthor">Makoto Shinkai</p>
+                        <p class="price" hidden>120000</p>
+                        <p class="id" hidden>002</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 120.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/thang4lie.jpg" class="item__image" alt="Your lie in april">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Your lie in april</a>
+                        <p class="info__arthor">Arakawa Naoshi</p>
+                        <p class="price" hidden>80000</p>
+                        <p class="id" hidden>003</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 80.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/24hParis.jpg" class="item__image" alt="24H in Paris">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">24H in Paris</a>
+                        <p class="info__arthor"> Romi Moondi</p>
+                        <p class="price" hidden>70000</p>
+                        <p class="id" hidden>004</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 70.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/220294463-416-k543891.jpg" class="item__image" alt="">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">The house above the sea</a>
+                        <p class="info__arthor">J.Nicole</p>
+                        <p class="price" hidden>120000</p>
+                        <p class="id" hidden>001</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 120.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/bye-doraemon.jpg" class="item__image" alt="bye-doraemon">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Vĩnh Biệt, Doraemon</a>
+                        <p class="info__arthor">Fujiko Fujio</p>
+                        <p class="price" hidden>61000</p>
+                        <p class="id" hidden>005</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 61.000</a>
+                    </div>
+                </section>
+
+                <section class="product-list__item">
+                    <img src="./sources/images/english.jpg" class="item__image" alt="">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Tự học 2000 từ vựng tiếng Anh</a>
+                        <p class="info__arthor">Nhà Xuất Bản DHQG Hà Nội</p>
+                        <p class="price" hidden>54000</p>
+                        <p class="id" hidden>006</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 54.000</a>
+                    </div>
+                </section>
+            
+                <section class="product-list__item">
+                    <img src="./sources/images/CodeDaokysu.jpg" class="item__image" alt="Code dạo">
+                    <div class="item__info">
+                        <a href="./chitiet.html" class="info__title">Lập Trình Viên Đâu Phải Chỉ Biết Code</a>
+                        <p class="info__arthor">Phạm Huy Hoàng</p>
+                        <p class="price" hidden>120000</p>
+                        <p class="id" hidden>007</p>
+                        <a href="#!" class="info__price-button" title="Thêm vào giỏ hàng">Mua: 120.000</a>
+                    </div>
+                </section>
+        </article>
+
+ <!-- All product--> 
+        <div class="content__see-all-product">
+            <a href="./sanpham.html">Xem tất cả sản phẩm</a>
+        </div>
+
+<!-- Đăng ký nhận tin tức -->
+        <article class="content__register-news">
+            <div>
+                <form action="">
+                    <label for="news">ĐĂNG KÝ NHẬN BẢN TIN</label>
+                    <input type="email" required id="news" placeholder="Nhập địa chỉ Email của bạn">
+                    <button>ĐĂNG KÝ</button>
+                </form>
+            </div>
+        </article>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <article>
+            <div class="footer__cskh">
+                <section class="cskh__item">
+                    <div class="item__title">DỊCH VỤ</div>
+                    <ul>
+                        <li><a href="">Điều khoản sữ dụng</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Giới thiệu về Shop</a></li>
+                        <li><a href="">Hệ thống trung tâm - nhà sách</a></li>
+                    </ul>
+                </section>
+                <section class="cskh__item">
+                    <div class="item__title">HỔ TRỢ</div>
+                    <ul>
+                        <li><a href="">Chính sách đổi - trả - hoàn tiền</a></li>
+                        <li><a href="">Chính sách khách sỉ</a></li>
+                        <li><a href="">Phương thức vận chuyển</a></li>
+                        <li><a href="">Phương thức thanh toán</a></li>
+                    </ul>
+                </section>
+                <section class="cskh__item">
+                    <div class="item__title">LIÊN HỆ</div>
+                    <ul>
+                        <li><a href="">Số A, phường B, C, Cần Thơ</a></li>
+                        <li><a href="">0909909990</a></li>
+                        <li><a href="">shop@web.com</a></li>
+                        <li><a href="">Facebook.com/shop</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer__place">
+                <section class="place">
+                    <p class="item__title"> ĐỊA CHỈ CỬA HÀNG</p>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.740982801863!2d105.15022761410596!3d9.177821439169005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a149a037e0bc87%3A0x1e6e5260e828628c!2zTmjDoCBzw6FjaCBGQUhBU0EgQ8OgIE1hdQ!5e0!3m2!1svi!2s!4v1638496506796!5m2!1svi!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <i class="fas fa-chevron-up toTop"> </i>
+    </footer>
+</body>
+    <script src="./app.js"></script>
+    <!-- Swiper Js -->
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+         const swiper = new Swiper('.swiper', {
+            speed: 600,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+        });
+    </script> -->
+    <!-- SlideShow thuần -->
+    <script>
+        var previous = document.querySelector(".prev");
+        var next = document.querySelector(".next");
+        var slides = document.getElementsByClassName("slide");
+        var current = 0;
+    
+    // Code next slide
+    function nextSlide() {
+        slides[current].classList.remove("active");
+        current ++;
+        if (current === slides.length)
+            current = 0;
+        slides[current].classList.add("active");
+        setTimeout(nextSlide, 4000)
+    }
+    nextSlide()
+    
+    </script>
+</html>
