@@ -154,8 +154,8 @@ input[name='search__input']:focus ~ .main-header__suggest{
 .cart-number {
     position: absolute;
     text-align: center;
-    top: -10px;
-    right: -6px;
+    top: -8px;
+    right: 0;
     font-size: 12px;
     color: rgb(3, 3, 3);
 }
