@@ -12,6 +12,7 @@ II> Tài nguyên sử dụng trong trang:
     - Thư viện swiper (trong ver 2): https://swiperjs.com/
     - Awesome icon: https://fontawesome.com/
     - Google map embed: https://maps.google.com/
+    - Favicon: https://favicon.io/
 
 III> Tài liệu tham khảo:
     - https://www.fahasa.com/
