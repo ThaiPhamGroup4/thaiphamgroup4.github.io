@@ -11,7 +11,7 @@
 
 -Thầy cũng có thể xem online bài của nhóm em qua:
 
-Ver 1 (Vanilla Js): https://thaiphamgroup4.github.io/BaiTapNhomCt188-04-Ver1/index.html
+Ver 1 (Vanilla Js): https://thaiphamgroup4.github.io/BaiTapNhomCt188-04-Ver1(vanilla%20javascript)/index.html
 Ver 2 (swiperjs Libary): https://thaiphamgroup4.github.io/BaiTapNhomCt188-04-Ver2/index.html
 
 
