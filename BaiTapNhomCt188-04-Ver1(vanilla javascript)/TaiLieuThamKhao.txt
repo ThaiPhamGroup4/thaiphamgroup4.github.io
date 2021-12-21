@@ -1,18 +1,19 @@
 -------- Dự án web BOOKSTORE --------
-ver 1 Code thuần tất cả
 
-I> Nhóm 4:
-    Pham Quang Thai - B2012257
-    Trinh Hoang Mai - B1906712
-    Luu Thi Duong Anh - B2007221		
-    
-II> Tài nguyên sử dụng trong trang:
+	VER 1 Javascript THUẦN
+
+I> Tài nguyên sử dụng trong trang:
 
     - Source ảnh, thông tin sách: https://www.wattpad.com/home
     - Ảnh banner: google hình Ảnh
     - Awesome icon: https://fontawesome.com/
     - Google map embed: https://maps.google.com/
     - Favicon: https://favicon.io/
+
+II> Chức năng:
+	- Thêm vào giỏ, hiện ra sản phẩm đã thêm, tính toán tiền
+	- Đăng ký và đăng nhập tài khoản: tài khoản và mật khẩu lưu vào LocalStorage
+	- Validate form
 
 III> Tài liệu tham khảo:
     - https://www.fahasa.com/
