@@ -1,9 +1,311 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+a {
+  text-decoration: none;
+  color: #000
+}
+.fab,
+.fas {
+  color: rgba(255,255,255,.897)
+}
+li {
+  list-style: none
+}
+body {
+  font-family: Poppins,sans-serif;
+  background-color: rgba(0,0,0,.959)
+}
+#wrapper {
+  display: grid;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  grid-template-columns: 16% 1fr;
+  gap: 30px;
+}
+.menu-bars {
+  background-color: #141414ea;
+  padding: 30px 0 10px 30px;
+  border-radius: 6px 0 0 6px;
+  min-width: 200px
+}
+.menu-bars__list__item .active {
+  border-right: 2px solid #6d42d1
+}
+.fa-compact-disc,
+.menu-bars__list__item .active a {
+  color: #6d42d1;
+}
+.menu-bars__logo {
+  margin-bottom: 50px
+}
+.menu-bars__logo img {
+  width: 23px;
+  line-height: 25px
+}
+.menu-bars__logo a {
+  font-size: 15x;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 10px;
+  line-height: 30px
+}
+.menu-bars__list {
+  margin: 30px 0;
+  font-size: 14px
+}
+.menu-bars__heading {
+  color: #807b7b;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 1px
+}
+.menu-bars__list__item li {
+  margin: 22px 0 22px
+}
+.menu-bars__list__item li a {
+  color: rgba(255,255,255,.897);
+  display: inline-block;
+  padding-left: 10px;
+}
+/* Container */
+.navbar__active {
+  color: #6d42d1 !important;
+}
+.container{
+    color: #fff;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.container__header {
+    display: flex;
+}
+.container__header__nav {
+    flex-basis: 26%;
+    word-spacing: 14px;
+}
+.container__header__nav a{
+    color: #b1aeae;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+}
+.container__header__search {
+    flex-basis: 48%;
+}
+.header__search__input::placeholder {
+    color: #b1aeae;
+}
+.header__search__input {
+    background: transparent;
+    width: 44%;
+    padding: 0 10px;
+    height: 36px;
+    outline: none;
+    border: 1px solid rgb(161, 152, 152);
+    border-radius: 6px;
+    color: #fff;
+}
+.container__header__user {
+    flex-basis: 26%;
+    display: grid;
+    grid-template-columns: 10% 10% 1fr;
+    gap: 14px;
+}
+.container__header__user .fa-bell,
+.container__header__user .fa-cog {
+    line-height: 36px;
+}
+.user {
+    background-color: rgba(253, 253, 253, 0.116);
+    display: flex;
+    border-radius: 6px;
+}
+.user>div {
+    background-color: rgba(66, 73, 66, 0.452);
+    height: 100%;
+    width: 40px;
+    border-radius: 6px;
+}
+.user__avatar {
+    width: 26px;
+    height: 26px;
+    border-radius: 10%;
+    position: relative;
+}
+.user__name {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+}
+.fa-user-graduate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.user img {
+    height: 36px;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
+.container__content {
+    margin-top: 60px;
+}
+.container__content h4 {
+    font-size: 16px;
+}
+.container__content__slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 50px;
+}
+.container__content__slider img {
+    width: 31%;
+    border-radius: 6px;
+}
+.container__content__main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+    "top-artists top-artists top-artists top-artists top-artists top-artists player player player player"
+    "genres genres top-charts top-charts top-charts top-charts  player player player player"
+}
+.content__main__top-artists {
+    grid-area: top-artists;
+    background-color: #1b1919ea;
+    /* height: 200px; */
+    padding: 20px;
+    border-radius: 6px;
+}
+.content__main__genres {
+    grid-area: genres;
+    background-color: #1b1919ea;
+    padding: 20px;
+    border-radius: 6px;
+}
+.content__main__top-charts {
+    grid-area: top-charts;
+    background-color: #1b1919ea;
+    padding: 20px;
+    border-radius: 6px;
+}
+.content__main__player {
+    grid-area: player;
+    background-color: #1b1919ea;
+    padding: 20px;
+    border-radius: 6px;
+}
+.top-artists__list {
+    display: flex;
+    justify-content: space-between;
+}
+.top-charts__heading__name,
+.genres__heading__name,
+.top-artists__heading__name {
+    display: inline-block;
+}
+.heading__see-all {
+  float: right; 
+  line-height: 25px;
+  font-size: 11px;
+  color: #fff; 
+}
+.top-artists__list__item {
+    flex-basis: 12%;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.top-artists__list__item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.item__name {
+    font-size: 12px;
+}
+.item__quantily-play {
+    font-size: 10px;
+    color: rgba(252, 252, 252, 0.616);
+}
+
+/* genres */
+.genres__list-row{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: space-between; */
+    margin: 20px 0;
+}
+.genres__list__item{
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.genres__list__item.color1 {
+    background-color: #3f4457;
+}
+
+.genres__list__item.color2 {
+    background-color: #e65d5d;
+}
+.genres__list__item.color3 {
+    background-color: #9b9c45;
+}
+.genres__list__item.color4 {
+    background-color: #1b6437;
+}
+.genres__list__item.color5 {
+    background-color: #5f308b;
+}
+.genres__list__item.color6 {
+    background-color: #344446;
+}
+
+/* top-charts */
+.top-charts__list {
+    margin-top: 20px;
+    /* height: 100%; */
+}
+.top-charts__list table {
+    width: 100%;
+}
+.top-charts__list__item {
+    margin: 10px 0;
+    display: block;
+}
+.top-charts__list__item img {
+    line-height: 67px;
+    display: inline-block;
+    height: 60px;
+    border-radius: 8px;
+}
+.top-charts__list table td {
+    display: inline-block;
+    margin: 0 10px;
+    /* text-align: center; */
+}
+.top-charts__list__item__count {
+    width: 10px;
+}
+.top-charts__list__item__name {
+    min-width: 36%;
+}
+.top-charts__list__item__name__singer {
+    font-size: 11px;
+}
+.top-charts__list__item__count,
+.top-charts__list__item__time {
+    font-size: 14px;
+}
+.top-charts__list__item__iconplay {
+    font-size: 22px;
+    cursor: pointer;
 }
