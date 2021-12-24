@@ -8,6 +8,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- Poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,14 +125,14 @@
                 </div>
             </header>
             <main class="container__content">
-                <div class="container__content__heading">
+                <!-- <div class="container__content__heading">
                     <p>New song</p>
                 </div>
                 <section class="container__content__slider">
                     <img src="./assets/image/trend-music1.jpg" alt="trend-music1">
                     <img src="./assets/image/trend-music2.jpg" alt="trend-music2">
                     <img src="./assets/image/trend-music3.jpg" alt="trend-music3">
-                </section>
+                </section> -->
                 <section class="container__content__main">
                     <div class="content__main__top-artists">
                         <div class="top-artists__heading">
@@ -253,8 +256,38 @@
                     <div class="content__main__player">
                         <div class="player__heading">
                             <p class="player__heading__name">Player</p>
+                            <a class="heading__playlist" href="#!"><span class="material-icons">queue_music</span></a>
                         </div>
-
+                        <!-- Giao diện trình chơi nhạc -->
+                        <div class="player__song">
+                            <div class="player__song__info">
+                                <div class="song__info__thumbnail"><img src="./assets/image/phanmanhquynh.webp" alt=""></div>
+                                
+                                <div class="song__info__name">Từ đó</div>
+                                <div class="song__info__authur">Phan Mạnh Quỳnh</div>
+                            </div>
+                            <div class="player__song__controls">
+                                <div class="controls__rewind">
+                                    <span class="time-current">00:00</span>
+                                    <input type="range" value="0" name="rewind-bar">
+                                    <span class="time-remain">4:00</span>
+                                </div>
+                                <div class="controls__function">
+                                    <!-- Các nút chỉnh nhạc -->
+                                    <div class="controls__function__button">
+                                        <div class="function__button__loop"><i class="fas fa-redo-alt"></i></div>
+                                        <div class="function__button__back"><i class="fas fa-backward"></i></div>
+                                        <div class="function__button__play"><i class="far fa-play-circle"></i></div>
+                                        <div class="function__button__next"><i class="fas fa-forward"></i></div>
+                                        <div class="function__button__shuffle"><i class="fas fa-random"></i></div>
+                                    </div>
+                                    <div class="controls__function__lyrics">
+                                        <i class="fas fa-chevron-up"></i>
+                                        <a href="#!">Lyrics</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
