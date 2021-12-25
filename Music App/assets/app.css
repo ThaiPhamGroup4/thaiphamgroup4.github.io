@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box
 }
+
 a {
   text-decoration: none;
   color: #000
@@ -199,6 +200,7 @@ body {
     background-color: #1b1919ea;
     padding: 20px 20px 0;
     border-radius: 6px;
+    position: relative;
 }
 .top-artists__list {
     display: flex;
@@ -314,8 +316,51 @@ body {
     cursor: pointer;
 }
 
-/* Music player */
 
+/* -----------------Music player ----------*/
+/* playlist */
+.player__playlist {
+    position: absolute;
+    margin: -44px 0 0 -20px;
+    width: 100%;
+    height: 100%;
+    background-color: #1b6437;
+    z-index: 2;
+    padding: 20px;
+    background-color: #1b1919e8;
+    visibility: hidden;
+    overflow: auto;
+    opacity: 0;
+    transition: all .3s linear;
+}
+.player__playlist.active {
+    visibility: visible;
+    opacity: 1;
+}
+/* playlis list song */
+.playlist__list-song {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+}
+.playlist__list-song__item {
+    display: flex;
+    padding: 10px;
+    background-color: #8fa0942d;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.song__item__order {
+}
+.song__item__name {
+    color: #fff;
+}
+.song__item__time {
+    /* width: 30%; */
+
+}
 .player__song {
     margin: 30px 0 0;
     height: calc(100% - 26px - 30px);
