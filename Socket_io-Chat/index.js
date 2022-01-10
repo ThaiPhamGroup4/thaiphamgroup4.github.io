@@ -5,9 +5,9 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
 
-app.get('/', (req, res) => {
-    res.render('home');
-});
+// app.get('/', (req, res) => {
+//     res.render('home');
+// });
 
 // 
 // io.on('connection', (socket) => {
@@ -24,10 +24,14 @@ app.get('/', (req, res) => {
 //       });
 // });
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
+
 // Bat su kien connection
 io.on('connection', (socket) => {
-        console.log('A user Connect')
-        io.emit('broadcast', "A user connected")
+    console.log('A user Connect')
+    io.emit('broadcast', "A user connected")
     // Bat su kien 'chat message'
     socket.on('chat message', (msg) => {
         // GUi su kien Chat message ve client
